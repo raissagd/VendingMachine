@@ -1,0 +1,36 @@
+|Controladora
+RESET => state~3.DATAIN
+CLOCK => state~1.DATAIN
+Confirmar => next_state.cancela.DATAB
+Confirmar => Selector6.IN2
+DltP => process_0.IN0
+DeqP => process_0.IN0
+DgtP => process_0.IN0
+Preco_eq_0 => Selector3.IN3
+Preco_eq_0 => Selector5.IN3
+Preco_eq_0 => Selector1.IN5
+Preco_eq_0 => Selector9.IN6
+Preco_eq_0 => Selector11.IN6
+Preco_eq_0 => Selector4.IN2
+Preco_eq_0 => next_state.confirma.DATAB
+Dinheiro_eq_0 => process_0.IN1
+Dinheiro_eq_0 => process_0.IN1
+Dinheiro_eq_0 => process_0.IN1
+Dinheiro_eq_0 => next_state.OUTPUTSELECT
+Dinheiro_eq_0 => next_state.OUTPUTSELECT
+Dinheiro_eq_0 => next_state.OUTPUTSELECT
+Dinheiro_eq_0 => next_state.OUTPUTSELECT
+Dinheiro_eq_0 => next_state.calcula.DATAB
+Troco_ativado <= Troco_ativado.DB_MAX_OUTPUT_PORT_TYPE
+Produto_liberado <= Produto_liberado.DB_MAX_OUTPUT_PORT_TYPE
+Produto_selecionado_clr <= Produto_selecionado_clr.DB_MAX_OUTPUT_PORT_TYPE
+Produto_selecionado_ld <= Selector3.DB_MAX_OUTPUT_PORT_TYPE
+Mensagem_ld <= Selector4.DB_MAX_OUTPUT_PORT_TYPE
+Mensagem_clr <= Mensagem_clr.DB_MAX_OUTPUT_PORT_TYPE
+Dinheiro_total_ld <= Dinheiro_total_ld.DB_MAX_OUTPUT_PORT_TYPE
+Dinheiro_total_clr <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Mensagem_do_sistema[0] <= Mensagem_do_sistema[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Mensagem_do_sistema[1] <= Mensagem_do_sistema[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Mensagem_do_sistema[2] <= Mensagem_do_sistema[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

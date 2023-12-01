@@ -1,0 +1,134 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity datapath is
+    port (
+        P: in std_logic_vector(2 downto 0); -- codigo do produto
+		  C: in std_logic_vector(15 downto 0); -- dinheiro
+		  CLOCK: in std_logic;
+		  clear_produto: in std_logic;
+		  load_produto: in std_logic;
+		  clear_mensagem: in std_logic;
+		  load_mensagem: in std_logic;
+		  clear_dinheiro: in std_logic;
+		  load_dinheiro: in std_logic;
+		  mensagem_do_sistema: in std_logic_vector(15 downto 0);
+		  preco_do_produto: in std_logic_vector(15 downto 0);
+		  
+		  produto_escolhido: out std_logic_vector(2 downto 0);
+		  AgtB: out std_logic;
+		  AltB: out std_logic;
+		  AeqB: out std_logic;
+		  troco : out std_logic_vector(15 downto 0);
+        DM : out std_logic_vector(15 downto 0) -- display
+    );
+end datapath;
+
+architecture arch of datapath is
+    -- Instância dos componentes
+    component registrador
+		 generic (
+			  W : integer := 4
+		 );
+		 port (
+			  reset   : in STD_LOGIC;
+			  clock   : in STD_LOGIC;
+			  load    : in STD_LOGIC; 
+			  enable  : in STD_LOGIC; 
+			  D       : in STD_LOGIC_VECTOR(W-1 downto 0);
+			  Q       : out STD_LOGIC_VECTOR(W-1 downto 0)
+		 );
+    end component;
+	 
+	 component comparador
+	 
+	 end component;
+	 
+	 component somador 
+	 
+	 end component;
+	 
+	 component subtrator
+	 
+	 end component;
+
+    component BCD_7seg
+			port (
+				entrada: in std_logic_vector (3 downto 0);
+				saida: out std_logic_vector (6 downto 0)
+			);
+    end component;
+	 
+	-- sinais internos
+begin
+   -- Instância dos componentes
+	Reg_: mean_4_clocks
+        generic map(
+            W => 4
+        )
+        port map(
+            CLK => CLOCK,
+            RESET => Fio_Reset_MA,
+            INPUT => Fio_Valor_Atual,
+            OUTPUT => MediaMovel
+        );
+
+   Comparador_instance: comparador 
+		generic map(
+			DATA_WIDTH => 4
+		)
+		port map(
+			a => E,
+			b => MediaMovel,
+			maior	=> Fio_Maior,
+			menor	=> Fio_Menor,
+			igual	=> Fio_Igual
+		);
+
+
+   Reg_E: registrador
+		 generic map (
+			W => 4
+		 )
+		 port map(
+			reset => '0',
+			clock => CLOCK,
+			load => Fio_Load_E,
+			enable => '1',
+			D => E,
+			Q => Fio_Valor_Atual
+		 );
+
+   BCD: BCD_7seg 
+		port map (
+        entrada => MediaMovel,
+		  saida => MediaMovel_Display
+		);
+	 
+	Subindo: registrador
+    generic map (
+        W => 2
+    )
+    port map (
+        reset => '0',
+        clock => CLOCK,
+        load => '1',
+        enable => Fio_Atualizar,
+        D => Fio_Subindo,
+        Q => Subindo_LED
+    );
+
+	Descendo: registrador
+		 generic map (
+			  W => 2
+		 )
+		 port map (
+			  reset => '0',
+			  clock => CLOCK,
+			  load => '1',
+			  enable => Fio_Atualizar,
+			  D => Fio_Descendo,
+			  Q => Descendo_LED
+		 );
+
+end arch;
