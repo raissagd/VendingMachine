@@ -1,0 +1,1560 @@
+TimeQuest Timing Analyzer report for VendingMachine
+Fri Dec 01 14:49:13 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'CLOCK'
+ 12. Slow Model Setup: 'Controladora:Ctrl|state.calcula'
+ 13. Slow Model Hold: 'CLOCK'
+ 14. Slow Model Hold: 'Controladora:Ctrl|state.calcula'
+ 15. Slow Model Recovery: 'CLOCK'
+ 16. Slow Model Removal: 'CLOCK'
+ 17. Slow Model Minimum Pulse Width: 'CLOCK'
+ 18. Slow Model Minimum Pulse Width: 'Controladora:Ctrl|state.calcula'
+ 19. Setup Times
+ 20. Hold Times
+ 21. Clock to Output Times
+ 22. Minimum Clock to Output Times
+ 23. Fast Model Setup Summary
+ 24. Fast Model Hold Summary
+ 25. Fast Model Recovery Summary
+ 26. Fast Model Removal Summary
+ 27. Fast Model Minimum Pulse Width Summary
+ 28. Fast Model Setup: 'CLOCK'
+ 29. Fast Model Setup: 'Controladora:Ctrl|state.calcula'
+ 30. Fast Model Hold: 'CLOCK'
+ 31. Fast Model Hold: 'Controladora:Ctrl|state.calcula'
+ 32. Fast Model Recovery: 'CLOCK'
+ 33. Fast Model Removal: 'CLOCK'
+ 34. Fast Model Minimum Pulse Width: 'CLOCK'
+ 35. Fast Model Minimum Pulse Width: 'Controladora:Ctrl|state.calcula'
+ 36. Setup Times
+ 37. Hold Times
+ 38. Clock to Output Times
+ 39. Minimum Clock to Output Times
+ 40. Multicorner Timing Analysis Summary
+ 41. Setup Times
+ 42. Hold Times
+ 43. Clock to Output Times
+ 44. Minimum Clock to Output Times
+ 45. Setup Transfers
+ 46. Hold Transfers
+ 47. Recovery Transfers
+ 48. Removal Transfers
+ 49. Report TCCS
+ 50. Report RSKM
+ 51. Unconstrained Paths
+ 52. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; VendingMachine                                                    ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C5T144C6                                                       ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                           ;
++---------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------+
+; Clock Name                      ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                             ;
++---------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------+
+; CLOCK                           ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK }                           ;
+; Controladora:Ctrl|state.calcula ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Controladora:Ctrl|state.calcula } ;
++---------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 314.56 MHz ; 314.56 MHz      ; CLOCK      ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++----------------------------------------------------------+
+; Slow Model Setup Summary                                 ;
++---------------------------------+--------+---------------+
+; Clock                           ; Slack  ; End Point TNS ;
++---------------------------------+--------+---------------+
+; CLOCK                           ; -2.179 ; -28.601       ;
+; Controladora:Ctrl|state.calcula ; -1.355 ; -3.063        ;
++---------------------------------+--------+---------------+
+
+
++----------------------------------------------------------+
+; Slow Model Hold Summary                                  ;
++---------------------------------+--------+---------------+
+; Clock                           ; Slack  ; End Point TNS ;
++---------------------------------+--------+---------------+
+; CLOCK                           ; -1.401 ; -11.383       ;
+; Controladora:Ctrl|state.calcula ; 0.646  ; 0.000         ;
++---------------------------------+--------+---------------+
+
+
++--------------------------------+
+; Slow Model Recovery Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; CLOCK ; -1.005 ; -9.333        ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Removal Summary    ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CLOCK ; 1.201 ; 0.000         ;
++-------+-------+---------------+
+
+
++----------------------------------------------------------+
+; Slow Model Minimum Pulse Width Summary                   ;
++---------------------------------+--------+---------------+
+; Clock                           ; Slack  ; End Point TNS ;
++---------------------------------+--------+---------------+
+; CLOCK                           ; -1.380 ; -23.380       ;
+; Controladora:Ctrl|state.calcula ; 0.500  ; 0.000         ;
++---------------------------------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'CLOCK'                                                                                                                                                                ;
++--------+-----------------------------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                           ; To Node                                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -2.179 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 2.948      ;
+; -2.059 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 2.828      ;
+; -1.966 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 2.735      ;
+; -1.965 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 2.734      ;
+; -1.941 ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.979      ;
+; -1.894 ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.932      ;
+; -1.868 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 2.637      ;
+; -1.866 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 2.635      ;
+; -1.819 ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.857      ;
+; -1.812 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; -0.269     ; 2.579      ;
+; -1.779 ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.817      ;
+; -1.760 ; Controladora:Ctrl|state.validaProduto               ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.268     ; 2.528      ;
+; -1.760 ; Controladora:Ctrl|state.validaProduto               ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.268     ; 2.528      ;
+; -1.760 ; Controladora:Ctrl|state.validaProduto               ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.268     ; 2.528      ;
+; -1.746 ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.784      ;
+; -1.714 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; -0.269     ; 2.481      ;
+; -1.712 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; -0.269     ; 2.479      ;
+; -1.705 ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.743      ;
+; -1.691 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 2.460      ;
+; -1.691 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 2.460      ;
+; -1.691 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 2.460      ;
+; -1.650 ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.686      ;
+; -1.648 ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.684      ;
+; -1.609 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 2.378      ;
+; -1.609 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 2.378      ;
+; -1.609 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 2.378      ;
+; -1.607 ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.645      ;
+; -1.592 ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.628      ;
+; -1.551 ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.587      ;
+; -1.533 ; Controladora:Ctrl|state.inicio                      ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.267      ; 2.836      ;
+; -1.533 ; Controladora:Ctrl|state.inicio                      ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.267      ; 2.836      ;
+; -1.533 ; Controladora:Ctrl|state.inicio                      ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.267      ; 2.836      ;
+; -1.496 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 2.265      ;
+; -1.496 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 2.265      ;
+; -1.496 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 2.265      ;
+; -1.475 ; Controladora:Ctrl|state.validaProduto               ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; CLOCK        ; CLOCK       ; 1.000        ; -0.001     ; 2.510      ;
+; -1.475 ; Controladora:Ctrl|state.validaProduto               ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; CLOCK        ; CLOCK       ; 1.000        ; -0.001     ; 2.510      ;
+; -1.475 ; Controladora:Ctrl|state.validaProduto               ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; CLOCK        ; CLOCK       ; 1.000        ; -0.001     ; 2.510      ;
+; -1.454 ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.492      ;
+; -1.453 ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.489      ;
+; -1.452 ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.490      ;
+; -1.406 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.442      ;
+; -1.406 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.442      ;
+; -1.406 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.442      ;
+; -1.402 ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.440      ;
+; -1.384 ; Controladora:Ctrl|state.cancela                     ; Controladora:Ctrl|state.inicio                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.420      ;
+; -1.373 ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.411      ;
+; -1.324 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.360      ;
+; -1.324 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.360      ;
+; -1.324 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.360      ;
+; -1.323 ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.361      ;
+; -1.313 ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.351      ;
+; -1.300 ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.336      ;
+; -1.242 ; Controladora:Ctrl|state.entrega                     ; Controladora:Ctrl|state.inicio                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.278      ;
+; -1.234 ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.272      ;
+; -1.218 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; Controladora:Ctrl|state.confirma                    ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 1.987      ;
+; -1.211 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.247      ;
+; -1.211 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.247      ;
+; -1.211 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.247      ;
+; -1.183 ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.221      ;
+; -1.104 ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 2.142      ;
+; -1.073 ; Controladora:Ctrl|state.validaProduto               ; Controladora:Ctrl|state.confirma                    ; CLOCK        ; CLOCK       ; 1.000        ; -0.268     ; 1.841      ;
+; -1.068 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.102      ;
+; -1.068 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.102      ;
+; -1.068 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.102      ;
+; -1.068 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.102      ;
+; -1.068 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.102      ;
+; -1.068 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.102      ;
+; -1.068 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.102      ;
+; -1.068 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.102      ;
+; -1.008 ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.044      ;
+; -1.008 ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.calcula                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 2.044      ;
+; -0.958 ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 1.992      ;
+; -0.953 ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.989      ;
+; -0.945 ; Controladora:Ctrl|state.confirma                    ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.981      ;
+; -0.937 ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.973      ;
+; -0.903 ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.939      ;
+; -0.866 ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.902      ;
+; -0.842 ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.878      ;
+; -0.814 ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.850      ;
+; -0.795 ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.831      ;
+; -0.795 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; Controladora:Ctrl|state.confirma                    ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 1.564      ;
+; -0.771 ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.807      ;
+; -0.724 ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.760      ;
+; -0.706 ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.742      ;
+; -0.700 ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.736      ;
+; -0.684 ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.720      ;
+; -0.682 ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.718      ;
+; -0.653 ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.689      ;
+; -0.635 ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.671      ;
+; -0.629 ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.665      ;
+; -0.611 ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.647      ;
+; -0.609 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; Controladora:Ctrl|state.confirma                    ; CLOCK        ; CLOCK       ; 1.000        ; -0.267     ; 1.378      ;
+; -0.568 ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.604      ;
+; -0.564 ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.600      ;
+; -0.558 ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.594      ;
+; -0.540 ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.576      ;
+; -0.538 ; Controladora:Ctrl|state.inicio                      ; Controladora:Ctrl|state.validaProduto               ; CLOCK        ; CLOCK       ; 1.000        ; 0.268      ; 1.842      ;
+; -0.536 ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.572      ;
+; -0.498 ; Controladora:Ctrl|state.troco                       ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.002      ; 1.536      ;
++--------+-----------------------------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'Controladora:Ctrl|state.calcula'                                                                                                                            ;
++--------+----------------------------------+------------------------------------------+--------------+---------------------------------+--------------+------------+------------+
+; Slack  ; From Node                        ; To Node                                  ; Launch Clock ; Latch Clock                     ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------+------------------------------------------+--------------+---------------------------------+--------------+------------+------------+
+; -1.355 ; Controladora:Ctrl|state.confirma ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.432      ; 1.558      ;
+; -1.327 ; Controladora:Ctrl|state.entrega  ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.432      ; 1.530      ;
+; -1.161 ; Controladora:Ctrl|state.espera   ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.432      ; 1.364      ;
+; -1.059 ; Controladora:Ctrl|state.inicio   ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.432      ; 1.262      ;
+; -0.953 ; Controladora:Ctrl|state.cancela  ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.583      ; 1.593      ;
+; -0.798 ; Controladora:Ctrl|state.espera   ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.583      ; 1.438      ;
+; -0.755 ; Controladora:Ctrl|state.inicio   ; Controladora:Ctrl|Mensagem_do_sistema[1] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.587      ; 1.396      ;
+; -0.734 ; Controladora:Ctrl|state.entrega  ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.583      ; 1.374      ;
+; -0.680 ; Controladora:Ctrl|state.cancela  ; Controladora:Ctrl|Mensagem_do_sistema[1] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.587      ; 1.321      ;
+; -0.658 ; Controladora:Ctrl|state.troco    ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.585      ; 1.300      ;
+; -0.592 ; Controladora:Ctrl|state.espera   ; Controladora:Ctrl|Mensagem_do_sistema[1] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.587      ; 1.233      ;
++--------+----------------------------------+------------------------------------------+--------------+---------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'CLOCK'                                                                                                                                                                                    ;
++--------+-----------------------------------------------------+-----------------------------------------------------+---------------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                           ; To Node                                             ; Launch Clock                    ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------------------+-----------------------------------------------------+---------------------------------+-------------+--------------+------------+------------+
+; -1.401 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 2.358      ; 1.473      ;
+; -1.401 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 2.358      ; 1.473      ;
+; -1.401 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 2.358      ; 1.473      ;
+; -0.901 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 2.358      ; 1.473      ;
+; -0.901 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 2.358      ; 1.473      ;
+; -0.901 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 2.358      ; 1.473      ;
+; -0.895 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 2.356      ; 1.977      ;
+; -0.895 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 2.356      ; 1.977      ;
+; -0.895 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 2.356      ; 1.977      ;
+; -0.895 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 2.356      ; 1.977      ;
+; -0.895 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 2.356      ; 1.977      ;
+; -0.895 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 2.356      ; 1.977      ;
+; -0.895 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 2.356      ; 1.977      ;
+; -0.895 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 2.356      ; 1.977      ;
+; -0.395 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 2.356      ; 1.977      ;
+; -0.395 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 2.356      ; 1.977      ;
+; -0.395 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 2.356      ; 1.977      ;
+; -0.395 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 2.356      ; 1.977      ;
+; -0.395 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 2.356      ; 1.977      ;
+; -0.395 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 2.356      ; 1.977      ;
+; -0.395 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 2.356      ; 1.977      ;
+; -0.395 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 2.356      ; 1.977      ;
+; -0.020 ; Controladora:Ctrl|state.calcula                     ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 2.358      ; 2.854      ;
+; 0.250  ; Controladora:Ctrl|Mensagem_do_sistema[0]            ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; -0.432     ; 0.084      ;
+; 0.401  ; Controladora:Ctrl|Mensagem_do_sistema[2]            ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; -0.583     ; 0.084      ;
+; 0.405  ; Controladora:Ctrl|Mensagem_do_sistema[1]            ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; -0.587     ; 0.084      ;
+; 0.480  ; Controladora:Ctrl|state.calcula                     ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 2.358      ; 2.854      ;
+; 0.803  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.069      ;
+; 0.809  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.075      ;
+; 0.813  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.079      ;
+; 0.843  ; Controladora:Ctrl|state.confirma                    ; Controladora:Ctrl|state.cancela                     ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.109      ;
+; 0.849  ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.115      ;
+; 0.849  ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.115      ;
+; 0.853  ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.119      ;
+; 0.955  ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.221      ;
+; 0.986  ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; Controladora:Ctrl|state.validaProduto               ; CLOCK                           ; CLOCK       ; 0.000        ; 0.001      ; 1.253      ;
+; 1.037  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.303      ;
+; 1.099  ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; Controladora:Ctrl|state.validaProduto               ; CLOCK                           ; CLOCK       ; 0.000        ; 0.001      ; 1.366      ;
+; 1.181  ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; Controladora:Ctrl|state.validaProduto               ; CLOCK                           ; CLOCK       ; 0.000        ; 0.001      ; 1.448      ;
+; 1.186  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.452      ;
+; 1.192  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.458      ;
+; 1.196  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.462      ;
+; 1.235  ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.501      ;
+; 1.235  ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.501      ;
+; 1.239  ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.505      ;
+; 1.250  ; Controladora:Ctrl|state.validaProduto               ; Controladora:Ctrl|state.validaProduto               ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.516      ;
+; 1.257  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.523      ;
+; 1.263  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.529      ;
+; 1.267  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.533      ;
+; 1.268  ; Controladora:Ctrl|state.troco                       ; Controladora:Ctrl|state.entrega                     ; CLOCK                           ; CLOCK       ; 0.000        ; 0.002      ; 1.536      ;
+; 1.306  ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.572      ;
+; 1.308  ; Controladora:Ctrl|state.inicio                      ; Controladora:Ctrl|state.validaProduto               ; CLOCK                           ; CLOCK       ; 0.000        ; 0.268      ; 1.842      ;
+; 1.310  ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.576      ;
+; 1.328  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.594      ;
+; 1.334  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.600      ;
+; 1.338  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.604      ;
+; 1.379  ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; Controladora:Ctrl|state.confirma                    ; CLOCK                           ; CLOCK       ; 0.000        ; -0.267     ; 1.378      ;
+; 1.381  ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.647      ;
+; 1.399  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.665      ;
+; 1.405  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.671      ;
+; 1.423  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.689      ;
+; 1.452  ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.718      ;
+; 1.454  ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.720      ;
+; 1.470  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.736      ;
+; 1.476  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.742      ;
+; 1.494  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.760      ;
+; 1.541  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.807      ;
+; 1.565  ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; Controladora:Ctrl|state.confirma                    ; CLOCK                           ; CLOCK       ; 0.000        ; -0.267     ; 1.564      ;
+; 1.565  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.831      ;
+; 1.584  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.850      ;
+; 1.596  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.862      ;
+; 1.612  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.878      ;
+; 1.636  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.902      ;
+; 1.651  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; Controladora:Ctrl|state.espera                      ; CLOCK                           ; CLOCK       ; 0.000        ; 0.002      ; 1.919      ;
+; 1.673  ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.939      ;
+; 1.707  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.973      ;
+; 1.715  ; Controladora:Ctrl|state.confirma                    ; Controladora:Ctrl|state.espera                      ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.981      ;
+; 1.723  ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.989      ;
+; 1.728  ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; -0.002     ; 1.992      ;
+; 1.729  ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.995      ;
+; 1.778  ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.calcula                     ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 2.044      ;
+; 1.778  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 2.044      ;
+; 1.823  ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.espera                      ; CLOCK                           ; CLOCK       ; 0.000        ; 0.002      ; 2.091      ;
+; 1.825  ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.entrega                     ; CLOCK                           ; CLOCK       ; 0.000        ; 0.002      ; 2.093      ;
+; 1.838  ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK                           ; CLOCK       ; 0.000        ; -0.002     ; 2.102      ;
+; 1.838  ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK                           ; CLOCK       ; 0.000        ; -0.002     ; 2.102      ;
+; 1.838  ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; -0.002     ; 2.102      ;
+; 1.838  ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; -0.002     ; 2.102      ;
+; 1.838  ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK                           ; CLOCK       ; 0.000        ; -0.002     ; 2.102      ;
+; 1.838  ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; CLOCK                           ; CLOCK       ; 0.000        ; -0.002     ; 2.102      ;
+; 1.838  ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK                           ; CLOCK       ; 0.000        ; -0.002     ; 2.102      ;
+; 1.838  ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; CLOCK                           ; CLOCK       ; 0.000        ; -0.002     ; 2.102      ;
+; 1.843  ; Controladora:Ctrl|state.validaProduto               ; Controladora:Ctrl|state.confirma                    ; CLOCK                           ; CLOCK       ; 0.000        ; -0.268     ; 1.841      ;
+; 1.941  ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; -0.269     ; 1.938      ;
+; 1.949  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; Controladora:Ctrl|state.entrega                     ; CLOCK                           ; CLOCK       ; 0.000        ; 0.002      ; 2.217      ;
+; 1.953  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.espera                      ; CLOCK                           ; CLOCK       ; 0.000        ; 0.002      ; 2.221      ;
+; 1.953  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.espera                      ; CLOCK                           ; CLOCK       ; 0.000        ; 0.002      ; 2.221      ;
+; 1.955  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.entrega                     ; CLOCK                           ; CLOCK       ; 0.000        ; 0.002      ; 2.223      ;
+; 1.955  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.entrega                     ; CLOCK                           ; CLOCK       ; 0.000        ; 0.002      ; 2.223      ;
+; 1.981  ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 2.247      ;
++--------+-----------------------------------------------------+-----------------------------------------------------+---------------------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'Controladora:Ctrl|state.calcula'                                                                                                                            ;
++-------+----------------------------------+------------------------------------------+--------------+---------------------------------+--------------+------------+------------+
+; Slack ; From Node                        ; To Node                                  ; Launch Clock ; Latch Clock                     ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------+------------------------------------------+--------------+---------------------------------+--------------+------------+------------+
+; 0.646 ; Controladora:Ctrl|state.espera   ; Controladora:Ctrl|Mensagem_do_sistema[1] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.587      ; 1.233      ;
+; 0.715 ; Controladora:Ctrl|state.troco    ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.585      ; 1.300      ;
+; 0.734 ; Controladora:Ctrl|state.cancela  ; Controladora:Ctrl|Mensagem_do_sistema[1] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.587      ; 1.321      ;
+; 0.791 ; Controladora:Ctrl|state.entrega  ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.583      ; 1.374      ;
+; 0.809 ; Controladora:Ctrl|state.inicio   ; Controladora:Ctrl|Mensagem_do_sistema[1] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.587      ; 1.396      ;
+; 0.830 ; Controladora:Ctrl|state.inicio   ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.432      ; 1.262      ;
+; 0.855 ; Controladora:Ctrl|state.espera   ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.583      ; 1.438      ;
+; 0.932 ; Controladora:Ctrl|state.espera   ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.432      ; 1.364      ;
+; 1.010 ; Controladora:Ctrl|state.cancela  ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.583      ; 1.593      ;
+; 1.098 ; Controladora:Ctrl|state.entrega  ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.432      ; 1.530      ;
+; 1.126 ; Controladora:Ctrl|state.confirma ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.432      ; 1.558      ;
++-------+----------------------------------+------------------------------------------+--------------+---------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'CLOCK'                                                                                                                                         ;
++--------+---------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                       ; To Node                                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -1.005 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.039      ;
+; -1.005 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.039      ;
+; -1.005 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.039      ;
+; -1.005 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.039      ;
+; -1.005 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.039      ;
+; -1.005 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.039      ;
+; -1.005 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.039      ;
+; -1.005 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 2.039      ;
+; -0.863 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 1.897      ;
+; -0.863 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 1.897      ;
+; -0.863 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 1.897      ;
+; -0.863 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 1.897      ;
+; -0.863 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 1.897      ;
+; -0.863 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 1.897      ;
+; -0.863 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 1.897      ;
+; -0.863 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.002     ; 1.897      ;
+; -0.431 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.267      ; 1.734      ;
+; -0.431 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.267      ; 1.734      ;
+; -0.431 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.267      ; 1.734      ;
++--------+---------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'CLOCK'                                                                                                                                         ;
++-------+---------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                       ; To Node                                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.201 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; CLOCK        ; CLOCK       ; 0.000        ; 0.267      ; 1.734      ;
+; 1.201 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; CLOCK        ; CLOCK       ; 0.000        ; 0.267      ; 1.734      ;
+; 1.201 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; CLOCK        ; CLOCK       ; 0.000        ; 0.267      ; 1.734      ;
+; 1.633 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 1.897      ;
+; 1.633 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 1.897      ;
+; 1.633 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 1.897      ;
+; 1.633 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 1.897      ;
+; 1.633 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 1.897      ;
+; 1.633 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 1.897      ;
+; 1.633 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 1.897      ;
+; 1.633 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 1.897      ;
+; 1.775 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 2.039      ;
+; 1.775 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 2.039      ;
+; 1.775 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 2.039      ;
+; 1.775 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 2.039      ;
+; 1.775 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 2.039      ;
+; 1.775 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 2.039      ;
+; 1.775 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 2.039      ;
+; 1.775 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; CLOCK        ; CLOCK       ; 0.000        ; -0.002     ; 2.039      ;
++-------+---------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'CLOCK'                                                                                              ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                              ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; CLOCK ; Rise       ; CLOCK                                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.calcula                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.calcula                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.cancela                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.cancela                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.confirma                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.confirma                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.entrega                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.entrega                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.espera                      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.espera                      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.inicio                      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.inicio                      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.troco                       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.troco                       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.validaProduto               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.validaProduto               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Produto|registro[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Produto|registro[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Produto|registro[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Produto|registro[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Produto|registro[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Produto|registro[2]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; CLOCK|combout                                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; CLOCK|combout                                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; CLOCK~clkctrl|inclk[0]                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; CLOCK~clkctrl|inclk[0]                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; CLOCK~clkctrl|outclk                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; CLOCK~clkctrl|outclk                                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.calcula|clk                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.calcula|clk                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.cancela|clk                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.cancela|clk                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.confirma|clk                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.confirma|clk                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.entrega|clk                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.entrega|clk                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.espera|clk                               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.espera|clk                               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.inicio|clk                               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.inicio|clk                               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.troco|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.troco|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.validaProduto|clk                        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.validaProduto|clk                        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[0]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[0]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[1]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[1]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[2]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[2]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[3]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[3]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[4]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[4]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[5]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[5]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[6]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[6]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[7]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[7]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Mensagem|registro[0]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Mensagem|registro[0]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Mensagem|registro[1]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Mensagem|registro[1]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Mensagem|registro[2]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Mensagem|registro[2]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Produto|registro[0]|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Produto|registro[0]|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Produto|registro[1]|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Produto|registro[1]|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Produto|registro[2]|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Produto|registro[2]|clk                   ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'Controladora:Ctrl|state.calcula'                                                                                  ;
++-------+--------------+----------------+------------------+---------------------------------+------------+------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                           ; Clock Edge ; Target                                   ;
++-------+--------------+----------------+------------------+---------------------------------+------------+------------------------------------------+
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Rise       ; Controladora:Ctrl|Mensagem_do_sistema[0] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Rise       ; Controladora:Ctrl|Mensagem_do_sistema[0] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Rise       ; Controladora:Ctrl|Mensagem_do_sistema[1] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Rise       ; Controladora:Ctrl|Mensagem_do_sistema[1] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Rise       ; Controladora:Ctrl|Mensagem_do_sistema[2] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Rise       ; Controladora:Ctrl|Mensagem_do_sistema[2] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Mensagem_do_sistema[0]|datad        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Mensagem_do_sistema[0]|datad        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Mensagem_do_sistema[1]|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Mensagem_do_sistema[1]|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Mensagem_do_sistema[2]|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Mensagem_do_sistema[2]|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Selector11~0clkctrl|inclk[0]        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Selector11~0clkctrl|inclk[0]        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Selector11~0clkctrl|outclk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Selector11~0clkctrl|outclk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Selector11~0|combout                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Selector11~0|combout                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Rise       ; Ctrl|Selector11~0|datad                  ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Rise       ; Ctrl|Selector11~0|datad                  ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Rise       ; Ctrl|state.calcula|regout                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Rise       ; Ctrl|state.calcula|regout                ;
++-------+--------------+----------------+------------------+---------------------------------+------------+------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Setup Times                                                                         ;
++-------------------------+------------+-------+-------+------------+-----------------+
+; Data Port               ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------------------+------------+-------+-------+------------+-----------------+
+; Confirmar               ; CLOCK      ; 5.132 ; 5.132 ; Rise       ; CLOCK           ;
+; Dinheiro[*]             ; CLOCK      ; 6.007 ; 6.007 ; Rise       ; CLOCK           ;
+;  Dinheiro[0]            ; CLOCK      ; 5.897 ; 5.897 ; Rise       ; CLOCK           ;
+;  Dinheiro[1]            ; CLOCK      ; 2.101 ; 2.101 ; Rise       ; CLOCK           ;
+;  Dinheiro[2]            ; CLOCK      ; 2.288 ; 2.288 ; Rise       ; CLOCK           ;
+;  Dinheiro[3]            ; CLOCK      ; 2.405 ; 2.405 ; Rise       ; CLOCK           ;
+;  Dinheiro[4]            ; CLOCK      ; 6.007 ; 6.007 ; Rise       ; CLOCK           ;
+;  Dinheiro[5]            ; CLOCK      ; 5.525 ; 5.525 ; Rise       ; CLOCK           ;
+;  Dinheiro[6]            ; CLOCK      ; 5.780 ; 5.780 ; Rise       ; CLOCK           ;
+;  Dinheiro[7]            ; CLOCK      ; 5.958 ; 5.958 ; Rise       ; CLOCK           ;
+; Produto_selecionado[*]  ; CLOCK      ; 3.977 ; 3.977 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[0] ; CLOCK      ; 3.793 ; 3.793 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[1] ; CLOCK      ; 3.670 ; 3.670 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[2] ; CLOCK      ; 3.977 ; 3.977 ; Rise       ; CLOCK           ;
++-------------------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------------+
+; Hold Times                                                                            ;
++-------------------------+------------+--------+--------+------------+-----------------+
+; Data Port               ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------------------+------------+--------+--------+------------+-----------------+
+; Confirmar               ; CLOCK      ; -3.581 ; -3.581 ; Rise       ; CLOCK           ;
+; Dinheiro[*]             ; CLOCK      ; 0.040  ; 0.040  ; Rise       ; CLOCK           ;
+;  Dinheiro[0]            ; CLOCK      ; -3.923 ; -3.923 ; Rise       ; CLOCK           ;
+;  Dinheiro[1]            ; CLOCK      ; 0.040  ; 0.040  ; Rise       ; CLOCK           ;
+;  Dinheiro[2]            ; CLOCK      ; -0.048 ; -0.048 ; Rise       ; CLOCK           ;
+;  Dinheiro[3]            ; CLOCK      ; -0.177 ; -0.177 ; Rise       ; CLOCK           ;
+;  Dinheiro[4]            ; CLOCK      ; -3.911 ; -3.911 ; Rise       ; CLOCK           ;
+;  Dinheiro[5]            ; CLOCK      ; -3.712 ; -3.712 ; Rise       ; CLOCK           ;
+;  Dinheiro[6]            ; CLOCK      ; -3.694 ; -3.694 ; Rise       ; CLOCK           ;
+;  Dinheiro[7]            ; CLOCK      ; -3.965 ; -3.965 ; Rise       ; CLOCK           ;
+; Produto_selecionado[*]  ; CLOCK      ; -3.440 ; -3.440 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[0] ; CLOCK      ; -3.563 ; -3.563 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[1] ; CLOCK      ; -3.440 ; -3.440 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[2] ; CLOCK      ; -3.747 ; -3.747 ; Rise       ; CLOCK           ;
++-------------------------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Clock to Output Times                                                        ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; Display[*]       ; CLOCK      ; 7.784 ; 7.784 ; Rise       ; CLOCK           ;
+;  Display[0]      ; CLOCK      ; 7.398 ; 7.398 ; Rise       ; CLOCK           ;
+;  Display[1]      ; CLOCK      ; 7.539 ; 7.539 ; Rise       ; CLOCK           ;
+;  Display[2]      ; CLOCK      ; 7.248 ; 7.248 ; Rise       ; CLOCK           ;
+;  Display[3]      ; CLOCK      ; 7.303 ; 7.303 ; Rise       ; CLOCK           ;
+;  Display[4]      ; CLOCK      ; 7.784 ; 7.784 ; Rise       ; CLOCK           ;
+;  Display[5]      ; CLOCK      ; 7.304 ; 7.304 ; Rise       ; CLOCK           ;
+;  Display[6]      ; CLOCK      ; 7.395 ; 7.395 ; Rise       ; CLOCK           ;
+; Produto_liberado ; CLOCK      ; 6.540 ; 6.540 ; Rise       ; CLOCK           ;
+; Troco[*]         ; CLOCK      ; 9.290 ; 9.290 ; Rise       ; CLOCK           ;
+;  Troco[0]        ; CLOCK      ; 8.351 ; 8.351 ; Rise       ; CLOCK           ;
+;  Troco[1]        ; CLOCK      ; 8.701 ; 8.701 ; Rise       ; CLOCK           ;
+;  Troco[2]        ; CLOCK      ; 8.784 ; 8.784 ; Rise       ; CLOCK           ;
+;  Troco[3]        ; CLOCK      ; 8.990 ; 8.990 ; Rise       ; CLOCK           ;
+;  Troco[4]        ; CLOCK      ; 8.917 ; 8.917 ; Rise       ; CLOCK           ;
+;  Troco[5]        ; CLOCK      ; 9.041 ; 9.041 ; Rise       ; CLOCK           ;
+;  Troco[6]        ; CLOCK      ; 9.290 ; 9.290 ; Rise       ; CLOCK           ;
+;  Troco[7]        ; CLOCK      ; 9.202 ; 9.202 ; Rise       ; CLOCK           ;
+; Troco_ativado    ; CLOCK      ; 7.043 ; 7.043 ; Rise       ; CLOCK           ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; Display[*]       ; CLOCK      ; 7.007 ; 7.007 ; Rise       ; CLOCK           ;
+;  Display[0]      ; CLOCK      ; 7.118 ; 7.118 ; Rise       ; CLOCK           ;
+;  Display[1]      ; CLOCK      ; 7.296 ; 7.296 ; Rise       ; CLOCK           ;
+;  Display[2]      ; CLOCK      ; 7.007 ; 7.007 ; Rise       ; CLOCK           ;
+;  Display[3]      ; CLOCK      ; 7.022 ; 7.022 ; Rise       ; CLOCK           ;
+;  Display[4]      ; CLOCK      ; 7.509 ; 7.509 ; Rise       ; CLOCK           ;
+;  Display[5]      ; CLOCK      ; 7.029 ; 7.029 ; Rise       ; CLOCK           ;
+;  Display[6]      ; CLOCK      ; 7.110 ; 7.110 ; Rise       ; CLOCK           ;
+; Produto_liberado ; CLOCK      ; 6.540 ; 6.540 ; Rise       ; CLOCK           ;
+; Troco[*]         ; CLOCK      ; 7.103 ; 7.103 ; Rise       ; CLOCK           ;
+;  Troco[0]        ; CLOCK      ; 7.698 ; 7.698 ; Rise       ; CLOCK           ;
+;  Troco[1]        ; CLOCK      ; 7.600 ; 7.600 ; Rise       ; CLOCK           ;
+;  Troco[2]        ; CLOCK      ; 7.425 ; 7.425 ; Rise       ; CLOCK           ;
+;  Troco[3]        ; CLOCK      ; 7.588 ; 7.588 ; Rise       ; CLOCK           ;
+;  Troco[4]        ; CLOCK      ; 7.381 ; 7.381 ; Rise       ; CLOCK           ;
+;  Troco[5]        ; CLOCK      ; 7.550 ; 7.550 ; Rise       ; CLOCK           ;
+;  Troco[6]        ; CLOCK      ; 7.511 ; 7.511 ; Rise       ; CLOCK           ;
+;  Troco[7]        ; CLOCK      ; 7.103 ; 7.103 ; Rise       ; CLOCK           ;
+; Troco_ativado    ; CLOCK      ; 6.957 ; 6.957 ; Rise       ; CLOCK           ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------+
+; Fast Model Setup Summary                                 ;
++---------------------------------+--------+---------------+
+; Clock                           ; Slack  ; End Point TNS ;
++---------------------------------+--------+---------------+
+; CLOCK                           ; -0.369 ; -2.724        ;
+; Controladora:Ctrl|state.calcula ; -0.211 ; -0.249        ;
++---------------------------------+--------+---------------+
+
+
++----------------------------------------------------------+
+; Fast Model Hold Summary                                  ;
++---------------------------------+--------+---------------+
+; Clock                           ; Slack  ; End Point TNS ;
++---------------------------------+--------+---------------+
+; CLOCK                           ; -0.914 ; -8.994        ;
+; Controladora:Ctrl|state.calcula ; 0.500  ; 0.000         ;
++---------------------------------+--------+---------------+
+
+
++--------------------------------+
+; Fast Model Recovery Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; CLOCK ; -0.016 ; -0.128        ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Fast Model Removal Summary    ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CLOCK ; 0.772 ; 0.000         ;
++-------+-------+---------------+
+
+
++----------------------------------------------------------+
+; Fast Model Minimum Pulse Width Summary                   ;
++---------------------------------+--------+---------------+
+; Clock                           ; Slack  ; End Point TNS ;
++---------------------------------+--------+---------------+
+; CLOCK                           ; -1.380 ; -23.380       ;
+; Controladora:Ctrl|state.calcula ; 0.500  ; 0.000         ;
++---------------------------------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'CLOCK'                                                                                                                                                                ;
++--------+-----------------------------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                           ; To Node                                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.369 ; Controladora:Ctrl|state.inicio                      ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.004      ; 1.405      ;
+; -0.369 ; Controladora:Ctrl|state.inicio                      ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.004      ; 1.405      ;
+; -0.369 ; Controladora:Ctrl|state.inicio                      ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.004      ; 1.405      ;
+; -0.314 ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.346      ;
+; -0.302 ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.334      ;
+; -0.277 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.305      ;
+; -0.248 ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.280      ;
+; -0.241 ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.273      ;
+; -0.227 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.255      ;
+; -0.226 ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.258      ;
+; -0.218 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.246      ;
+; -0.215 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.243      ;
+; -0.205 ; Controladora:Ctrl|state.validaProduto               ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.233      ;
+; -0.205 ; Controladora:Ctrl|state.validaProduto               ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.233      ;
+; -0.205 ; Controladora:Ctrl|state.validaProduto               ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.233      ;
+; -0.201 ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.233      ;
+; -0.200 ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.232      ;
+; -0.198 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.226      ;
+; -0.198 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.226      ;
+; -0.198 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.226      ;
+; -0.197 ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.229      ;
+; -0.190 ; Controladora:Ctrl|state.validaProduto               ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.222      ;
+; -0.190 ; Controladora:Ctrl|state.validaProduto               ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.222      ;
+; -0.190 ; Controladora:Ctrl|state.validaProduto               ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.222      ;
+; -0.183 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.215      ;
+; -0.183 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.215      ;
+; -0.183 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.215      ;
+; -0.170 ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.202      ;
+; -0.168 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.196      ;
+; -0.157 ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.189      ;
+; -0.149 ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.177      ;
+; -0.146 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.174      ;
+; -0.137 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.165      ;
+; -0.137 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.165      ;
+; -0.137 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.165      ;
+; -0.128 ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.160      ;
+; -0.122 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.154      ;
+; -0.122 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.154      ;
+; -0.122 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.154      ;
+; -0.113 ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.145      ;
+; -0.109 ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.141      ;
+; -0.105 ; Controladora:Ctrl|state.cancela                     ; Controladora:Ctrl|state.inicio                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.137      ;
+; -0.101 ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.133      ;
+; -0.099 ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.127      ;
+; -0.097 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.125      ;
+; -0.097 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.125      ;
+; -0.097 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.125      ;
+; -0.091 ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.123      ;
+; -0.082 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.114      ;
+; -0.082 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.114      ;
+; -0.082 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.114      ;
+; -0.077 ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 1.105      ;
+; -0.073 ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.105      ;
+; -0.055 ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.087      ;
+; -0.046 ; Controladora:Ctrl|state.entrega                     ; Controladora:Ctrl|state.inicio                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.078      ;
+; -0.044 ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.076      ;
+; -0.025 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.057      ;
+; -0.025 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.057      ;
+; -0.025 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.057      ;
+; -0.025 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.057      ;
+; -0.025 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.057      ;
+; -0.025 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.057      ;
+; -0.025 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.057      ;
+; -0.025 ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.057      ;
+; -0.023 ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.055      ;
+; 0.013  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.019      ;
+; 0.028  ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.004      ;
+; 0.064  ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.968      ;
+; 0.065  ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.calcula                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.967      ;
+; 0.090  ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; Controladora:Ctrl|state.confirma                    ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 0.938      ;
+; 0.092  ; Controladora:Ctrl|state.confirma                    ; Controladora:Ctrl|state.espera                      ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.940      ;
+; 0.102  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.930      ;
+; 0.105  ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.927      ;
+; 0.115  ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.917      ;
+; 0.123  ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.909      ;
+; 0.137  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.895      ;
+; 0.149  ; Controladora:Ctrl|state.inicio                      ; Controladora:Ctrl|state.validaProduto               ; CLOCK        ; CLOCK       ; 1.000        ; 0.004      ; 0.887      ;
+; 0.156  ; Controladora:Ctrl|state.validaProduto               ; Controladora:Ctrl|state.confirma                    ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 0.872      ;
+; 0.172  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.860      ;
+; 0.174  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.858      ;
+; 0.191  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.841      ;
+; 0.207  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.825      ;
+; 0.209  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.823      ;
+; 0.240  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.792      ;
+; 0.242  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.790      ;
+; 0.242  ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.troco                       ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.790      ;
+; 0.244  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.788      ;
+; 0.257  ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.775      ;
+; 0.275  ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; Controladora:Ctrl|state.confirma                    ; CLOCK        ; CLOCK       ; 1.000        ; -0.004     ; 0.753      ;
+; 0.275  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.757      ;
+; 0.277  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.755      ;
+; 0.279  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.753      ;
+; 0.292  ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.740      ;
+; 0.307  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.725      ;
+; 0.310  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.722      ;
+; 0.314  ; Controladora:Ctrl|state.troco                       ; Controladora:Ctrl|state.entrega                     ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.718      ;
+; 0.314  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.718      ;
+; 0.327  ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.705      ;
+; 0.327  ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.705      ;
+; 0.328  ; Controladora:Ctrl|state.validaProduto               ; Controladora:Ctrl|state.validaProduto               ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.704      ;
++--------+-----------------------------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'Controladora:Ctrl|state.calcula'                                                                                                                            ;
++--------+----------------------------------+------------------------------------------+--------------+---------------------------------+--------------+------------+------------+
+; Slack  ; From Node                        ; To Node                                  ; Launch Clock ; Latch Clock                     ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------+------------------------------------------+--------------+---------------------------------+--------------+------------+------------+
+; -0.211 ; Controladora:Ctrl|state.confirma ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.020      ; 0.711      ;
+; -0.197 ; Controladora:Ctrl|state.entrega  ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.020      ; 0.697      ;
+; -0.135 ; Controladora:Ctrl|state.espera   ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.020      ; 0.635      ;
+; -0.107 ; Controladora:Ctrl|state.inicio   ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.020      ; 0.607      ;
+; -0.038 ; Controladora:Ctrl|state.cancela  ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.084      ; 0.733      ;
+; 0.032  ; Controladora:Ctrl|state.espera   ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.084      ; 0.663      ;
+; 0.045  ; Controladora:Ctrl|state.entrega  ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.084      ; 0.650      ;
+; 0.049  ; Controladora:Ctrl|state.inicio   ; Controladora:Ctrl|Mensagem_do_sistema[1] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.085      ; 0.642      ;
+; 0.075  ; Controladora:Ctrl|state.cancela  ; Controladora:Ctrl|Mensagem_do_sistema[1] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.085      ; 0.616      ;
+; 0.091  ; Controladora:Ctrl|state.troco    ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.084      ; 0.604      ;
+; 0.106  ; Controladora:Ctrl|state.espera   ; Controladora:Ctrl|Mensagem_do_sistema[1] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 1.000        ; 0.085      ; 0.585      ;
++--------+----------------------------------+------------------------------------------+--------------+---------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'CLOCK'                                                                                                                                                                                    ;
++--------+-----------------------------------------------------+-----------------------------------------------------+---------------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                           ; To Node                                             ; Launch Clock                    ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------------------+-----------------------------------------------------+---------------------------------+-------------+--------------+------------+------------+
+; -0.914 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 1.429      ; 0.808      ;
+; -0.914 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 1.429      ; 0.808      ;
+; -0.914 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 1.429      ; 0.808      ;
+; -0.727 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 1.429      ; 0.995      ;
+; -0.727 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 1.429      ; 0.995      ;
+; -0.727 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 1.429      ; 0.995      ;
+; -0.727 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 1.429      ; 0.995      ;
+; -0.727 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 1.429      ; 0.995      ;
+; -0.727 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 1.429      ; 0.995      ;
+; -0.727 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 1.429      ; 0.995      ;
+; -0.727 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 1.429      ; 0.995      ;
+; -0.436 ; Controladora:Ctrl|state.calcula                     ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; 1.429      ; 1.286      ;
+; -0.414 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 1.429      ; 0.808      ;
+; -0.414 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 1.429      ; 0.808      ;
+; -0.414 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 1.429      ; 0.808      ;
+; -0.227 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 1.429      ; 0.995      ;
+; -0.227 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 1.429      ; 0.995      ;
+; -0.227 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 1.429      ; 0.995      ;
+; -0.227 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 1.429      ; 0.995      ;
+; -0.227 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 1.429      ; 0.995      ;
+; -0.227 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 1.429      ; 0.995      ;
+; -0.227 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 1.429      ; 0.995      ;
+; -0.227 ; Controladora:Ctrl|state.calcula                     ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 1.429      ; 0.995      ;
+; -0.090 ; Controladora:Ctrl|Mensagem_do_sistema[0]            ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; -0.020     ; 0.042      ;
+; -0.026 ; Controladora:Ctrl|Mensagem_do_sistema[2]            ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; -0.084     ; 0.042      ;
+; -0.025 ; Controladora:Ctrl|Mensagem_do_sistema[1]            ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ; Controladora:Ctrl|state.calcula ; CLOCK       ; 0.000        ; -0.085     ; 0.042      ;
+; 0.064  ; Controladora:Ctrl|state.calcula                     ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.calcula ; CLOCK       ; -0.500       ; 1.429      ; 1.286      ;
+; 0.361  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.513      ;
+; 0.362  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.514      ;
+; 0.365  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.517      ;
+; 0.378  ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.530      ;
+; 0.378  ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.530      ;
+; 0.378  ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.530      ;
+; 0.385  ; Controladora:Ctrl|state.confirma                    ; Controladora:Ctrl|state.cancela                     ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.537      ;
+; 0.432  ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.584      ;
+; 0.444  ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; Controladora:Ctrl|state.validaProduto               ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.596      ;
+; 0.463  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.615      ;
+; 0.484  ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; Controladora:Ctrl|state.validaProduto               ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.636      ;
+; 0.496  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.648      ;
+; 0.500  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.652      ;
+; 0.503  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.655      ;
+; 0.518  ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.670      ;
+; 0.518  ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.670      ;
+; 0.518  ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.670      ;
+; 0.531  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.683      ;
+; 0.535  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.687      ;
+; 0.538  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.690      ;
+; 0.545  ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; Controladora:Ctrl|state.validaProduto               ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.697      ;
+; 0.551  ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; Controladora:Ctrl|state.confirma                    ; CLOCK                           ; CLOCK       ; 0.000        ; -0.004     ; 0.699      ;
+; 0.552  ; Controladora:Ctrl|state.validaProduto               ; Controladora:Ctrl|state.validaProduto               ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.704      ;
+; 0.553  ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.705      ;
+; 0.553  ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.705      ;
+; 0.566  ; Controladora:Ctrl|state.troco                       ; Controladora:Ctrl|state.entrega                     ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.718      ;
+; 0.566  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.718      ;
+; 0.570  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.722      ;
+; 0.573  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.725      ;
+; 0.588  ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.740      ;
+; 0.601  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.753      ;
+; 0.603  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.755      ;
+; 0.605  ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; Controladora:Ctrl|state.confirma                    ; CLOCK                           ; CLOCK       ; 0.000        ; -0.004     ; 0.753      ;
+; 0.605  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.757      ;
+; 0.623  ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.775      ;
+; 0.636  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.788      ;
+; 0.638  ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.790      ;
+; 0.638  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.790      ;
+; 0.640  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.792      ;
+; 0.671  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.823      ;
+; 0.673  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.825      ;
+; 0.689  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.841      ;
+; 0.692  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.844      ;
+; 0.706  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.858      ;
+; 0.708  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.860      ;
+; 0.719  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; Controladora:Ctrl|state.espera                      ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.871      ;
+; 0.724  ; Controladora:Ctrl|state.validaProduto               ; Controladora:Ctrl|state.confirma                    ; CLOCK                           ; CLOCK       ; 0.000        ; -0.004     ; 0.872      ;
+; 0.731  ; Controladora:Ctrl|state.inicio                      ; Controladora:Ctrl|state.validaProduto               ; CLOCK                           ; CLOCK       ; 0.000        ; 0.004      ; 0.887      ;
+; 0.736  ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; -0.004     ; 0.884      ;
+; 0.743  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.895      ;
+; 0.757  ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.909      ;
+; 0.760  ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.912      ;
+; 0.765  ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.917      ;
+; 0.767  ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; -0.004     ; 0.915      ;
+; 0.775  ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; Controladora:Ctrl|state.troco                       ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.927      ;
+; 0.778  ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.930      ;
+; 0.788  ; Controladora:Ctrl|state.confirma                    ; Controladora:Ctrl|state.espera                      ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.940      ;
+; 0.790  ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; Controladora:Ctrl|state.confirma                    ; CLOCK                           ; CLOCK       ; 0.000        ; -0.004     ; 0.938      ;
+; 0.806  ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.espera                      ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.958      ;
+; 0.807  ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; Controladora:Ctrl|state.entrega                     ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.959      ;
+; 0.815  ; Controladora:Ctrl|state.espera                      ; Controladora:Ctrl|state.calcula                     ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 0.967      ;
+; 0.857  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.espera                      ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.009      ;
+; 0.858  ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; Controladora:Ctrl|state.entrega                     ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.010      ;
+; 0.869  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.espera                      ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.021      ;
+; 0.870  ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; Controladora:Ctrl|state.entrega                     ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.022      ;
+; 0.874  ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; Controladora:Ctrl|state.entrega                     ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.026      ;
+; 0.880  ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; Controladora:Ctrl|state.espera                      ; CLOCK                           ; CLOCK       ; 0.000        ; -0.004     ; 1.028      ;
+; 0.894  ; Controladora:Ctrl|state.validaProduto               ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ; CLOCK                           ; CLOCK       ; 0.000        ; -0.004     ; 1.042      ;
+; 0.894  ; Controladora:Ctrl|state.validaProduto               ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ; CLOCK                           ; CLOCK       ; 0.000        ; -0.004     ; 1.042      ;
+; 0.894  ; Controladora:Ctrl|state.validaProduto               ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ; CLOCK                           ; CLOCK       ; 0.000        ; -0.004     ; 1.042      ;
+; 0.905  ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.057      ;
+; 0.905  ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.057      ;
+; 0.905  ; Controladora:Ctrl|state.espera                      ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK                           ; CLOCK       ; 0.000        ; 0.000      ; 1.057      ;
++--------+-----------------------------------------------------+-----------------------------------------------------+---------------------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'Controladora:Ctrl|state.calcula'                                                                                                                            ;
++-------+----------------------------------+------------------------------------------+--------------+---------------------------------+--------------+------------+------------+
+; Slack ; From Node                        ; To Node                                  ; Launch Clock ; Latch Clock                     ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------+------------------------------------------+--------------+---------------------------------+--------------+------------+------------+
+; 0.500 ; Controladora:Ctrl|state.espera   ; Controladora:Ctrl|Mensagem_do_sistema[1] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.085      ; 0.585      ;
+; 0.520 ; Controladora:Ctrl|state.troco    ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.084      ; 0.604      ;
+; 0.531 ; Controladora:Ctrl|state.cancela  ; Controladora:Ctrl|Mensagem_do_sistema[1] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.085      ; 0.616      ;
+; 0.557 ; Controladora:Ctrl|state.inicio   ; Controladora:Ctrl|Mensagem_do_sistema[1] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.085      ; 0.642      ;
+; 0.566 ; Controladora:Ctrl|state.entrega  ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.084      ; 0.650      ;
+; 0.579 ; Controladora:Ctrl|state.espera   ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.084      ; 0.663      ;
+; 0.587 ; Controladora:Ctrl|state.inicio   ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.020      ; 0.607      ;
+; 0.615 ; Controladora:Ctrl|state.espera   ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.020      ; 0.635      ;
+; 0.649 ; Controladora:Ctrl|state.cancela  ; Controladora:Ctrl|Mensagem_do_sistema[2] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.084      ; 0.733      ;
+; 0.677 ; Controladora:Ctrl|state.entrega  ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.020      ; 0.697      ;
+; 0.691 ; Controladora:Ctrl|state.confirma ; Controladora:Ctrl|Mensagem_do_sistema[0] ; CLOCK        ; Controladora:Ctrl|state.calcula ; 0.000        ; 0.020      ; 0.711      ;
++-------+----------------------------------+------------------------------------------+--------------+---------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'CLOCK'                                                                                                                                         ;
++--------+---------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                       ; To Node                                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.016 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 1.048      ;
+; 0.043  ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.989      ;
+; 0.043  ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.989      ;
+; 0.043  ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.989      ;
+; 0.043  ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.989      ;
+; 0.043  ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.989      ;
+; 0.043  ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.989      ;
+; 0.043  ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.989      ;
+; 0.043  ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; CLOCK        ; CLOCK       ; 1.000        ; 0.000      ; 0.989      ;
+; 0.108  ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.004      ; 0.928      ;
+; 0.108  ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.004      ; 0.928      ;
+; 0.108  ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; CLOCK        ; CLOCK       ; 1.000        ; 0.004      ; 0.928      ;
++--------+---------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'CLOCK'                                                                                                                                         ;
++-------+---------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                       ; To Node                                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.772 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Produto|registro[0]  ; CLOCK        ; CLOCK       ; 0.000        ; 0.004      ; 0.928      ;
+; 0.772 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Produto|registro[2]  ; CLOCK        ; CLOCK       ; 0.000        ; 0.004      ; 0.928      ;
+; 0.772 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Produto|registro[1]  ; CLOCK        ; CLOCK       ; 0.000        ; 0.004      ; 0.928      ;
+; 0.837 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 0.989      ;
+; 0.837 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 0.989      ;
+; 0.837 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 0.989      ;
+; 0.837 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 0.989      ;
+; 0.837 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 0.989      ;
+; 0.837 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 0.989      ;
+; 0.837 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 0.989      ;
+; 0.837 ; Controladora:Ctrl|state.entrega ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 0.989      ;
+; 0.896 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 1.048      ;
+; 0.896 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 1.048      ;
+; 0.896 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 1.048      ;
+; 0.896 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 1.048      ;
+; 0.896 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 1.048      ;
+; 0.896 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 1.048      ;
+; 0.896 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 1.048      ;
+; 0.896 ; Controladora:Ctrl|state.cancela ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ; CLOCK        ; CLOCK       ; 0.000        ; 0.000      ; 1.048      ;
++-------+---------------------------------+-----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'CLOCK'                                                                                              ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                              ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; CLOCK ; Rise       ; CLOCK                                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.calcula                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.calcula                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.cancela                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.cancela                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.confirma                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.confirma                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.entrega                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.entrega                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.espera                      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.espera                      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.inicio                      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.inicio                      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.troco                       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.troco                       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; Controladora:Ctrl|state.validaProduto               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Controladora:Ctrl|state.validaProduto               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Dinheiro|registro[7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Mensagem|registro[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Mensagem|registro[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Mensagem|registro[2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Produto|registro[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Produto|registro[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Produto|registro[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Produto|registro[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Produto|registro[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK ; Rise       ; datapath:DPath|registrador:Reg_Produto|registro[2]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; CLOCK|combout                                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; CLOCK|combout                                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; CLOCK~clkctrl|inclk[0]                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; CLOCK~clkctrl|inclk[0]                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; CLOCK~clkctrl|outclk                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; CLOCK~clkctrl|outclk                                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.calcula|clk                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.calcula|clk                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.cancela|clk                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.cancela|clk                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.confirma|clk                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.confirma|clk                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.entrega|clk                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.entrega|clk                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.espera|clk                               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.espera|clk                               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.inicio|clk                               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.inicio|clk                               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.troco|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.troco|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; Ctrl|state.validaProduto|clk                        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; Ctrl|state.validaProduto|clk                        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[0]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[0]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[1]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[1]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[2]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[2]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[3]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[3]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[4]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[4]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[5]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[5]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[6]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[6]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[7]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Dinheiro|registro[7]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Mensagem|registro[0]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Mensagem|registro[0]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Mensagem|registro[1]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Mensagem|registro[1]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Mensagem|registro[2]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Mensagem|registro[2]|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Produto|registro[0]|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Produto|registro[0]|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Produto|registro[1]|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Produto|registro[1]|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK ; Rise       ; DPath|Reg_Produto|registro[2]|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK ; Rise       ; DPath|Reg_Produto|registro[2]|clk                   ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'Controladora:Ctrl|state.calcula'                                                                                  ;
++-------+--------------+----------------+------------------+---------------------------------+------------+------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                           ; Clock Edge ; Target                                   ;
++-------+--------------+----------------+------------------+---------------------------------+------------+------------------------------------------+
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Rise       ; Controladora:Ctrl|Mensagem_do_sistema[0] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Rise       ; Controladora:Ctrl|Mensagem_do_sistema[0] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Rise       ; Controladora:Ctrl|Mensagem_do_sistema[1] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Rise       ; Controladora:Ctrl|Mensagem_do_sistema[1] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Rise       ; Controladora:Ctrl|Mensagem_do_sistema[2] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Rise       ; Controladora:Ctrl|Mensagem_do_sistema[2] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Mensagem_do_sistema[0]|datad        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Mensagem_do_sistema[0]|datad        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Mensagem_do_sistema[1]|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Mensagem_do_sistema[1]|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Mensagem_do_sistema[2]|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Mensagem_do_sistema[2]|datac        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Selector11~0clkctrl|inclk[0]        ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Selector11~0clkctrl|inclk[0]        ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Selector11~0clkctrl|outclk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Selector11~0clkctrl|outclk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Selector11~0|combout                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Fall       ; Ctrl|Selector11~0|combout                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Rise       ; Ctrl|Selector11~0|datad                  ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Rise       ; Ctrl|Selector11~0|datad                  ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Controladora:Ctrl|state.calcula ; Rise       ; Ctrl|state.calcula|regout                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Controladora:Ctrl|state.calcula ; Rise       ; Ctrl|state.calcula|regout                ;
++-------+--------------+----------------+------------------+---------------------------------+------------+------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Setup Times                                                                         ;
++-------------------------+------------+-------+-------+------------+-----------------+
+; Data Port               ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------------------+------------+-------+-------+------------+-----------------+
+; Confirmar               ; CLOCK      ; 2.677 ; 2.677 ; Rise       ; CLOCK           ;
+; Dinheiro[*]             ; CLOCK      ; 3.104 ; 3.104 ; Rise       ; CLOCK           ;
+;  Dinheiro[0]            ; CLOCK      ; 3.027 ; 3.027 ; Rise       ; CLOCK           ;
+;  Dinheiro[1]            ; CLOCK      ; 0.682 ; 0.682 ; Rise       ; CLOCK           ;
+;  Dinheiro[2]            ; CLOCK      ; 0.806 ; 0.806 ; Rise       ; CLOCK           ;
+;  Dinheiro[3]            ; CLOCK      ; 0.846 ; 0.846 ; Rise       ; CLOCK           ;
+;  Dinheiro[4]            ; CLOCK      ; 3.104 ; 3.104 ; Rise       ; CLOCK           ;
+;  Dinheiro[5]            ; CLOCK      ; 2.889 ; 2.889 ; Rise       ; CLOCK           ;
+;  Dinheiro[6]            ; CLOCK      ; 3.016 ; 3.016 ; Rise       ; CLOCK           ;
+;  Dinheiro[7]            ; CLOCK      ; 3.077 ; 3.077 ; Rise       ; CLOCK           ;
+; Produto_selecionado[*]  ; CLOCK      ; 2.339 ; 2.339 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[0] ; CLOCK      ; 2.238 ; 2.238 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[1] ; CLOCK      ; 2.200 ; 2.200 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[2] ; CLOCK      ; 2.339 ; 2.339 ; Rise       ; CLOCK           ;
++-------------------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------------+
+; Hold Times                                                                            ;
++-------------------------+------------+--------+--------+------------+-----------------+
+; Data Port               ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------------------+------------+--------+--------+------------+-----------------+
+; Confirmar               ; CLOCK      ; -1.986 ; -1.986 ; Rise       ; CLOCK           ;
+; Dinheiro[*]             ; CLOCK      ; 0.272  ; 0.272  ; Rise       ; CLOCK           ;
+;  Dinheiro[0]            ; CLOCK      ; -2.136 ; -2.136 ; Rise       ; CLOCK           ;
+;  Dinheiro[1]            ; CLOCK      ; 0.272  ; 0.272  ; Rise       ; CLOCK           ;
+;  Dinheiro[2]            ; CLOCK      ; 0.220  ; 0.220  ; Rise       ; CLOCK           ;
+;  Dinheiro[3]            ; CLOCK      ; 0.174  ; 0.174  ; Rise       ; CLOCK           ;
+;  Dinheiro[4]            ; CLOCK      ; -2.124 ; -2.124 ; Rise       ; CLOCK           ;
+;  Dinheiro[5]            ; CLOCK      ; -2.053 ; -2.053 ; Rise       ; CLOCK           ;
+;  Dinheiro[6]            ; CLOCK      ; -2.039 ; -2.039 ; Rise       ; CLOCK           ;
+;  Dinheiro[7]            ; CLOCK      ; -2.172 ; -2.172 ; Rise       ; CLOCK           ;
+; Produto_selecionado[*]  ; CLOCK      ; -2.080 ; -2.080 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[0] ; CLOCK      ; -2.118 ; -2.118 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[1] ; CLOCK      ; -2.080 ; -2.080 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[2] ; CLOCK      ; -2.219 ; -2.219 ; Rise       ; CLOCK           ;
++-------------------------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Clock to Output Times                                                        ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; Display[*]       ; CLOCK      ; 4.213 ; 4.213 ; Rise       ; CLOCK           ;
+;  Display[0]      ; CLOCK      ; 3.980 ; 3.980 ; Rise       ; CLOCK           ;
+;  Display[1]      ; CLOCK      ; 4.117 ; 4.117 ; Rise       ; CLOCK           ;
+;  Display[2]      ; CLOCK      ; 3.984 ; 3.984 ; Rise       ; CLOCK           ;
+;  Display[3]      ; CLOCK      ; 3.991 ; 3.991 ; Rise       ; CLOCK           ;
+;  Display[4]      ; CLOCK      ; 4.213 ; 4.213 ; Rise       ; CLOCK           ;
+;  Display[5]      ; CLOCK      ; 3.995 ; 3.995 ; Rise       ; CLOCK           ;
+;  Display[6]      ; CLOCK      ; 3.982 ; 3.982 ; Rise       ; CLOCK           ;
+; Produto_liberado ; CLOCK      ; 3.612 ; 3.612 ; Rise       ; CLOCK           ;
+; Troco[*]         ; CLOCK      ; 4.746 ; 4.746 ; Rise       ; CLOCK           ;
+;  Troco[0]        ; CLOCK      ; 4.285 ; 4.285 ; Rise       ; CLOCK           ;
+;  Troco[1]        ; CLOCK      ; 4.398 ; 4.398 ; Rise       ; CLOCK           ;
+;  Troco[2]        ; CLOCK      ; 4.440 ; 4.440 ; Rise       ; CLOCK           ;
+;  Troco[3]        ; CLOCK      ; 4.585 ; 4.585 ; Rise       ; CLOCK           ;
+;  Troco[4]        ; CLOCK      ; 4.502 ; 4.502 ; Rise       ; CLOCK           ;
+;  Troco[5]        ; CLOCK      ; 4.570 ; 4.570 ; Rise       ; CLOCK           ;
+;  Troco[6]        ; CLOCK      ; 4.746 ; 4.746 ; Rise       ; CLOCK           ;
+;  Troco[7]        ; CLOCK      ; 4.657 ; 4.657 ; Rise       ; CLOCK           ;
+; Troco_ativado    ; CLOCK      ; 3.876 ; 3.876 ; Rise       ; CLOCK           ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; Display[*]       ; CLOCK      ; 3.855 ; 3.855 ; Rise       ; CLOCK           ;
+;  Display[0]      ; CLOCK      ; 3.862 ; 3.862 ; Rise       ; CLOCK           ;
+;  Display[1]      ; CLOCK      ; 4.004 ; 4.004 ; Rise       ; CLOCK           ;
+;  Display[2]      ; CLOCK      ; 3.860 ; 3.860 ; Rise       ; CLOCK           ;
+;  Display[3]      ; CLOCK      ; 3.873 ; 3.873 ; Rise       ; CLOCK           ;
+;  Display[4]      ; CLOCK      ; 4.101 ; 4.101 ; Rise       ; CLOCK           ;
+;  Display[5]      ; CLOCK      ; 3.878 ; 3.878 ; Rise       ; CLOCK           ;
+;  Display[6]      ; CLOCK      ; 3.855 ; 3.855 ; Rise       ; CLOCK           ;
+; Produto_liberado ; CLOCK      ; 3.612 ; 3.612 ; Rise       ; CLOCK           ;
+; Troco[*]         ; CLOCK      ; 3.842 ; 3.842 ; Rise       ; CLOCK           ;
+;  Troco[0]        ; CLOCK      ; 4.115 ; 4.115 ; Rise       ; CLOCK           ;
+;  Troco[1]        ; CLOCK      ; 4.078 ; 4.078 ; Rise       ; CLOCK           ;
+;  Troco[2]        ; CLOCK      ; 3.982 ; 3.982 ; Rise       ; CLOCK           ;
+;  Troco[3]        ; CLOCK      ; 4.112 ; 4.112 ; Rise       ; CLOCK           ;
+;  Troco[4]        ; CLOCK      ; 3.962 ; 3.962 ; Rise       ; CLOCK           ;
+;  Troco[5]        ; CLOCK      ; 4.044 ; 4.044 ; Rise       ; CLOCK           ;
+;  Troco[6]        ; CLOCK      ; 4.070 ; 4.070 ; Rise       ; CLOCK           ;
+;  Troco[7]        ; CLOCK      ; 3.842 ; 3.842 ; Rise       ; CLOCK           ;
+; Troco_ativado    ; CLOCK      ; 3.844 ; 3.844 ; Rise       ; CLOCK           ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                             ;
++----------------------------------+---------+---------+----------+---------+---------------------+
+; Clock                            ; Setup   ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
++----------------------------------+---------+---------+----------+---------+---------------------+
+; Worst-case Slack                 ; -2.179  ; -1.401  ; -1.005   ; 0.772   ; -1.380              ;
+;  CLOCK                           ; -2.179  ; -1.401  ; -1.005   ; 0.772   ; -1.380              ;
+;  Controladora:Ctrl|state.calcula ; -1.355  ; 0.500   ; N/A      ; N/A     ; 0.500               ;
+; Design-wide TNS                  ; -31.664 ; -11.383 ; -9.333   ; 0.0     ; -23.38              ;
+;  CLOCK                           ; -28.601 ; -11.383 ; -9.333   ; 0.000   ; -23.380             ;
+;  Controladora:Ctrl|state.calcula ; -3.063  ; 0.000   ; N/A      ; N/A     ; 0.000               ;
++----------------------------------+---------+---------+----------+---------+---------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Setup Times                                                                         ;
++-------------------------+------------+-------+-------+------------+-----------------+
+; Data Port               ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------------------+------------+-------+-------+------------+-----------------+
+; Confirmar               ; CLOCK      ; 5.132 ; 5.132 ; Rise       ; CLOCK           ;
+; Dinheiro[*]             ; CLOCK      ; 6.007 ; 6.007 ; Rise       ; CLOCK           ;
+;  Dinheiro[0]            ; CLOCK      ; 5.897 ; 5.897 ; Rise       ; CLOCK           ;
+;  Dinheiro[1]            ; CLOCK      ; 2.101 ; 2.101 ; Rise       ; CLOCK           ;
+;  Dinheiro[2]            ; CLOCK      ; 2.288 ; 2.288 ; Rise       ; CLOCK           ;
+;  Dinheiro[3]            ; CLOCK      ; 2.405 ; 2.405 ; Rise       ; CLOCK           ;
+;  Dinheiro[4]            ; CLOCK      ; 6.007 ; 6.007 ; Rise       ; CLOCK           ;
+;  Dinheiro[5]            ; CLOCK      ; 5.525 ; 5.525 ; Rise       ; CLOCK           ;
+;  Dinheiro[6]            ; CLOCK      ; 5.780 ; 5.780 ; Rise       ; CLOCK           ;
+;  Dinheiro[7]            ; CLOCK      ; 5.958 ; 5.958 ; Rise       ; CLOCK           ;
+; Produto_selecionado[*]  ; CLOCK      ; 3.977 ; 3.977 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[0] ; CLOCK      ; 3.793 ; 3.793 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[1] ; CLOCK      ; 3.670 ; 3.670 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[2] ; CLOCK      ; 3.977 ; 3.977 ; Rise       ; CLOCK           ;
++-------------------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------------+
+; Hold Times                                                                            ;
++-------------------------+------------+--------+--------+------------+-----------------+
+; Data Port               ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------------------+------------+--------+--------+------------+-----------------+
+; Confirmar               ; CLOCK      ; -1.986 ; -1.986 ; Rise       ; CLOCK           ;
+; Dinheiro[*]             ; CLOCK      ; 0.272  ; 0.272  ; Rise       ; CLOCK           ;
+;  Dinheiro[0]            ; CLOCK      ; -2.136 ; -2.136 ; Rise       ; CLOCK           ;
+;  Dinheiro[1]            ; CLOCK      ; 0.272  ; 0.272  ; Rise       ; CLOCK           ;
+;  Dinheiro[2]            ; CLOCK      ; 0.220  ; 0.220  ; Rise       ; CLOCK           ;
+;  Dinheiro[3]            ; CLOCK      ; 0.174  ; 0.174  ; Rise       ; CLOCK           ;
+;  Dinheiro[4]            ; CLOCK      ; -2.124 ; -2.124 ; Rise       ; CLOCK           ;
+;  Dinheiro[5]            ; CLOCK      ; -2.053 ; -2.053 ; Rise       ; CLOCK           ;
+;  Dinheiro[6]            ; CLOCK      ; -2.039 ; -2.039 ; Rise       ; CLOCK           ;
+;  Dinheiro[7]            ; CLOCK      ; -2.172 ; -2.172 ; Rise       ; CLOCK           ;
+; Produto_selecionado[*]  ; CLOCK      ; -2.080 ; -2.080 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[0] ; CLOCK      ; -2.118 ; -2.118 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[1] ; CLOCK      ; -2.080 ; -2.080 ; Rise       ; CLOCK           ;
+;  Produto_selecionado[2] ; CLOCK      ; -2.219 ; -2.219 ; Rise       ; CLOCK           ;
++-------------------------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Clock to Output Times                                                        ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; Display[*]       ; CLOCK      ; 7.784 ; 7.784 ; Rise       ; CLOCK           ;
+;  Display[0]      ; CLOCK      ; 7.398 ; 7.398 ; Rise       ; CLOCK           ;
+;  Display[1]      ; CLOCK      ; 7.539 ; 7.539 ; Rise       ; CLOCK           ;
+;  Display[2]      ; CLOCK      ; 7.248 ; 7.248 ; Rise       ; CLOCK           ;
+;  Display[3]      ; CLOCK      ; 7.303 ; 7.303 ; Rise       ; CLOCK           ;
+;  Display[4]      ; CLOCK      ; 7.784 ; 7.784 ; Rise       ; CLOCK           ;
+;  Display[5]      ; CLOCK      ; 7.304 ; 7.304 ; Rise       ; CLOCK           ;
+;  Display[6]      ; CLOCK      ; 7.395 ; 7.395 ; Rise       ; CLOCK           ;
+; Produto_liberado ; CLOCK      ; 6.540 ; 6.540 ; Rise       ; CLOCK           ;
+; Troco[*]         ; CLOCK      ; 9.290 ; 9.290 ; Rise       ; CLOCK           ;
+;  Troco[0]        ; CLOCK      ; 8.351 ; 8.351 ; Rise       ; CLOCK           ;
+;  Troco[1]        ; CLOCK      ; 8.701 ; 8.701 ; Rise       ; CLOCK           ;
+;  Troco[2]        ; CLOCK      ; 8.784 ; 8.784 ; Rise       ; CLOCK           ;
+;  Troco[3]        ; CLOCK      ; 8.990 ; 8.990 ; Rise       ; CLOCK           ;
+;  Troco[4]        ; CLOCK      ; 8.917 ; 8.917 ; Rise       ; CLOCK           ;
+;  Troco[5]        ; CLOCK      ; 9.041 ; 9.041 ; Rise       ; CLOCK           ;
+;  Troco[6]        ; CLOCK      ; 9.290 ; 9.290 ; Rise       ; CLOCK           ;
+;  Troco[7]        ; CLOCK      ; 9.202 ; 9.202 ; Rise       ; CLOCK           ;
+; Troco_ativado    ; CLOCK      ; 7.043 ; 7.043 ; Rise       ; CLOCK           ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; Display[*]       ; CLOCK      ; 3.855 ; 3.855 ; Rise       ; CLOCK           ;
+;  Display[0]      ; CLOCK      ; 3.862 ; 3.862 ; Rise       ; CLOCK           ;
+;  Display[1]      ; CLOCK      ; 4.004 ; 4.004 ; Rise       ; CLOCK           ;
+;  Display[2]      ; CLOCK      ; 3.860 ; 3.860 ; Rise       ; CLOCK           ;
+;  Display[3]      ; CLOCK      ; 3.873 ; 3.873 ; Rise       ; CLOCK           ;
+;  Display[4]      ; CLOCK      ; 4.101 ; 4.101 ; Rise       ; CLOCK           ;
+;  Display[5]      ; CLOCK      ; 3.878 ; 3.878 ; Rise       ; CLOCK           ;
+;  Display[6]      ; CLOCK      ; 3.855 ; 3.855 ; Rise       ; CLOCK           ;
+; Produto_liberado ; CLOCK      ; 3.612 ; 3.612 ; Rise       ; CLOCK           ;
+; Troco[*]         ; CLOCK      ; 3.842 ; 3.842 ; Rise       ; CLOCK           ;
+;  Troco[0]        ; CLOCK      ; 4.115 ; 4.115 ; Rise       ; CLOCK           ;
+;  Troco[1]        ; CLOCK      ; 4.078 ; 4.078 ; Rise       ; CLOCK           ;
+;  Troco[2]        ; CLOCK      ; 3.982 ; 3.982 ; Rise       ; CLOCK           ;
+;  Troco[3]        ; CLOCK      ; 4.112 ; 4.112 ; Rise       ; CLOCK           ;
+;  Troco[4]        ; CLOCK      ; 3.962 ; 3.962 ; Rise       ; CLOCK           ;
+;  Troco[5]        ; CLOCK      ; 4.044 ; 4.044 ; Rise       ; CLOCK           ;
+;  Troco[6]        ; CLOCK      ; 4.070 ; 4.070 ; Rise       ; CLOCK           ;
+;  Troco[7]        ; CLOCK      ; 3.842 ; 3.842 ; Rise       ; CLOCK           ;
+; Troco_ativado    ; CLOCK      ; 3.844 ; 3.844 ; Rise       ; CLOCK           ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                               ;
++---------------------------------+---------------------------------+----------+----------+----------+----------+
+; From Clock                      ; To Clock                        ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------------+---------------------------------+----------+----------+----------+----------+
+; CLOCK                           ; CLOCK                           ; 200      ; 0        ; 0        ; 0        ;
+; Controladora:Ctrl|state.calcula ; CLOCK                           ; 15       ; 12       ; 0        ; 0        ;
+; CLOCK                           ; Controladora:Ctrl|state.calcula ; 11       ; 0        ; 0        ; 0        ;
++---------------------------------+---------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                ;
++---------------------------------+---------------------------------+----------+----------+----------+----------+
+; From Clock                      ; To Clock                        ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------------+---------------------------------+----------+----------+----------+----------+
+; CLOCK                           ; CLOCK                           ; 200      ; 0        ; 0        ; 0        ;
+; Controladora:Ctrl|state.calcula ; CLOCK                           ; 15       ; 12       ; 0        ; 0        ;
+; CLOCK                           ; Controladora:Ctrl|state.calcula ; 11       ; 0        ; 0        ; 0        ;
++---------------------------------+---------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Recovery Transfers                                                ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLOCK      ; CLOCK    ; 19       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Removal Transfers                                                 ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLOCK      ; CLOCK    ; 19       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 12    ; 12   ;
+; Unconstrained Input Port Paths  ; 73    ; 73   ;
+; Unconstrained Output Ports      ; 17    ; 17   ;
+; Unconstrained Output Port Paths ; 84    ; 84   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Dec 01 14:49:12 2023
+Info: Command: quartus_sta VendingMachine -c VendingMachine
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (335093): TimeQuest Timing Analyzer is analyzing 3 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'VendingMachine.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CLOCK CLOCK
+    Info (332105): create_clock -period 1.000 -name Controladora:Ctrl|state.calcula Controladora:Ctrl|state.calcula
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -2.179
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.179       -28.601 CLOCK 
+    Info (332119):    -1.355        -3.063 Controladora:Ctrl|state.calcula 
+Info (332146): Worst-case hold slack is -1.401
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.401       -11.383 CLOCK 
+    Info (332119):     0.646         0.000 Controladora:Ctrl|state.calcula 
+Info (332146): Worst-case recovery slack is -1.005
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.005        -9.333 CLOCK 
+Info (332146): Worst-case removal slack is 1.201
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     1.201         0.000 CLOCK 
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -23.380 CLOCK 
+    Info (332119):     0.500         0.000 Controladora:Ctrl|state.calcula 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.369
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.369        -2.724 CLOCK 
+    Info (332119):    -0.211        -0.249 Controladora:Ctrl|state.calcula 
+Info (332146): Worst-case hold slack is -0.914
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.914        -8.994 CLOCK 
+    Info (332119):     0.500         0.000 Controladora:Ctrl|state.calcula 
+Info (332146): Worst-case recovery slack is -0.016
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.016        -0.128 CLOCK 
+Info (332146): Worst-case removal slack is 0.772
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.772         0.000 CLOCK 
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -23.380 CLOCK 
+    Info (332119):     0.500         0.000 Controladora:Ctrl|state.calcula 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4546 megabytes
+    Info: Processing ended: Fri Dec 01 14:49:13 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
