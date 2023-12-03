@@ -46,6 +46,15 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_VendingMachine -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_VendingMachine -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_VendingMachine
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "120 ns" -section_id tb_VendingMachine
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_VendingMachine -section_id tb_VendingMachine
+set_global_assignment -name VHDL_FILE tb_VendingMachine.vhd
 set_global_assignment -name VHDL_FILE ../BCD_7seg/bcd_7seg.vhd
 set_global_assignment -name VHDL_FILE ../Comparador/comparador.vhd
 set_global_assignment -name VHDL_FILE ../Registrador/registrador.vhd
@@ -55,14 +64,5 @@ set_global_assignment -name VHDL_FILE ../Subtrator/subtrator.vhd
 set_global_assignment -name VHDL_FILE ../CaminhoDeDados/datapath.vhd
 set_global_assignment -name VHDL_FILE ../Controladora/Controladora.vhd
 set_global_assignment -name VHDL_FILE VendingMachine.vhd
-set_global_assignment -name VHDL_FILE ../BCD_7seg/tb_VendingMachine.vhd
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_VendingMachine -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_NAME tb_VendingMachine -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_VendingMachine
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "100 ns" -section_id tb_VendingMachine
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_VendingMachine -section_id tb_VendingMachine
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_VendingMachine.vhd -section_id tb_VendingMachine
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

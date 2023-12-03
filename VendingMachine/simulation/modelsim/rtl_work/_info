@@ -2,22 +2,22 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\Acer\Downloads\Vendingmachine\VendingMachine\simulation\modelsim
+Z0 dD:\Hermes\tp\aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\VendingMachine-main\VendingMachine\simulation\modelsim
 Ebcd_7seg
-Z1 w1701403129
+Z1 w1701473871
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z4 dC:\Users\Acer\Downloads\Vendingmachine\VendingMachine\simulation\modelsim
-Z5 8C:/Users/Acer/Downloads/Vendingmachine/BCD_7seg/bcd_7seg.vhd
-Z6 FC:/Users/Acer/Downloads/Vendingmachine/BCD_7seg/bcd_7seg.vhd
+Z4 dD:\Hermes\tp\aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\VendingMachine-main\VendingMachine\simulation\modelsim
+Z5 8D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/BCD_7seg/bcd_7seg.vhd
+Z6 FD:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/BCD_7seg/bcd_7seg.vhd
 l0
 L4
 V2PPViA]ZHYdg43zZE7Tnz3
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1701452970.515000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/BCD_7seg/bcd_7seg.vhd|
-Z10 !s107 C:/Users/Acer/Downloads/Vendingmachine/BCD_7seg/bcd_7seg.vhd|
+Z8 !s108 1701480265.944000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/BCD_7seg/bcd_7seg.vhd|
+Z10 !s107 D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/BCD_7seg/bcd_7seg.vhd|
 Z11 o-93 -work work -O0
 Z12 tExplicit 1
 !s100 ELj_;e69_[19WDbZ<nZNW0
@@ -39,27 +39,27 @@ R12
 !s100 2[SQW^7HOR5XFOjGcX4:63
 !i10b 1
 Ecomparador
-R1
-Z13 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z13 w1701473873
+Z14 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 R2
 R3
 R4
-Z14 8C:/Users/Acer/Downloads/Vendingmachine/Comparador/comparador.vhd
-Z15 FC:/Users/Acer/Downloads/Vendingmachine/Comparador/comparador.vhd
+Z15 8D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Comparador/comparador.vhd
+Z16 FD:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Comparador/comparador.vhd
 l0
 L5
 VgTnPnfSj7GzJVmGR;91dH3
 R7
 31
-Z16 !s108 1701452970.605000
-Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/Comparador/comparador.vhd|
-Z18 !s107 C:/Users/Acer/Downloads/Vendingmachine/Comparador/comparador.vhd|
+Z17 !s108 1701480266.102000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Comparador/comparador.vhd|
+Z19 !s107 D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Comparador/comparador.vhd|
 R11
 R12
 !s100 [Q`ej9fh@WKJl>`U`mWJm0
 !i10b 1
 Aestrutural
-R13
+R14
 R2
 R3
 DEx4 work 10 comparador 0 22 gTnPnfSj7GzJVmGR;91dH3
@@ -68,102 +68,102 @@ L19
 VDB8Zi9]`<iCC[e^7l@PH60
 R7
 31
-R16
 R17
 R18
+R19
 R11
 R12
 !s100 KS^Li1>3UkPcb>JRi4zCU2
 !i10b 1
 Econtroladora
-Z19 w1701451755
-R13
+Z20 w1701479310
+R14
 R2
 R3
 R4
-Z20 8C:/Users/Acer/Downloads/Vendingmachine/Controladora/Controladora.vhd
-Z21 FC:/Users/Acer/Downloads/Vendingmachine/Controladora/Controladora.vhd
+Z21 8D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Controladora/Controladora.vhd
+Z22 FD:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Controladora/Controladora.vhd
 l0
 L5
-VUhT^C;QY@0;kWU9LEjnN]1
+V[PCM6TMR]P8GE47kd;13j2
 R7
 31
-Z22 !s108 1701452971.270000
-Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/Controladora/Controladora.vhd|
-Z24 !s107 C:/Users/Acer/Downloads/Vendingmachine/Controladora/Controladora.vhd|
+Z23 !s108 1701480266.902000
+Z24 !s90 -reportprogress|300|-93|-work|work|D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Controladora/Controladora.vhd|
+Z25 !s107 D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Controladora/Controladora.vhd|
 R11
 R12
-!s100 8EfOHEc?5M[j[ndPe_f>]2
+!s100 jOaojaRjZF61[i<R1e>@M0
 !i10b 1
 Aarch
-R13
+R14
 R2
 R3
-DEx4 work 12 controladora 0 22 UhT^C;QY@0;kWU9LEjnN]1
+DEx4 work 12 controladora 0 22 [PCM6TMR]P8GE47kd;13j2
 l19
 L15
-VU>_Chf:o2KEYZ5M<]hXP22
+V<WRZD9HPVcDaA:>3g30of0
 R7
 31
-R22
 R23
 R24
+R25
 R11
 R12
-!s100 jl[on:13jb0;b_?;4bgAH3
+!s100 51>3d?P<H>=f]:JbdVWao3
 !i10b 1
 Edatapath
-R1
-R13
+Z26 w1701479005
+R14
 R2
 R3
 R4
-Z25 8C:/Users/Acer/Downloads/Vendingmachine/CaminhoDeDados/datapath.vhd
-Z26 FC:/Users/Acer/Downloads/Vendingmachine/CaminhoDeDados/datapath.vhd
+Z27 8D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/CaminhoDeDados/datapath.vhd
+Z28 FD:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/CaminhoDeDados/datapath.vhd
 l0
 L5
-V1>[ROMgK42cF9CdQoa5]Z1
+VX3DnV[_H_Ib;[TQ`B7nW>3
 R7
 31
-Z27 !s108 1701452971.182000
-Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/CaminhoDeDados/datapath.vhd|
-Z29 !s107 C:/Users/Acer/Downloads/Vendingmachine/CaminhoDeDados/datapath.vhd|
+Z29 !s108 1701480266.791000
+Z30 !s90 -reportprogress|300|-93|-work|work|D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/CaminhoDeDados/datapath.vhd|
+Z31 !s107 D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/CaminhoDeDados/datapath.vhd|
 R11
 R12
-!s100 >5WJzC6UMQFC^ozlbL[d32
+!s100 OVC3]cOJY3QCc]>nSeS7N3
 !i10b 1
 Aarch
-R13
+R14
 R2
 R3
-DEx4 work 8 datapath 0 22 1>[ROMgK42cF9CdQoa5]Z1
-l100
-L29
-VdKzzKDjzXK5n2FLVY2aTW2
+DEx4 work 8 datapath 0 22 X3DnV[_H_Ib;[TQ`B7nW>3
+l101
+L30
+ViP==3zAQQYM@Ac>aSb;LH3
 R7
 31
-R27
-R28
 R29
+R30
+R31
 R11
 R12
-!s100 ^>JFT0M?cK><IWcemm?mX2
+!s100 @>5mc?8>g3HgG:SNoBbHI2
 !i10b 1
 Eregistrador
-R1
+Z32 w1701473875
 R2
 R3
 R4
-Z30 8C:/Users/Acer/Downloads/Vendingmachine/Registrador/registrador.vhd
-Z31 FC:/Users/Acer/Downloads/Vendingmachine/Registrador/registrador.vhd
+Z33 8D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Registrador/registrador.vhd
+Z34 FD:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Registrador/registrador.vhd
 l0
 L4
 VUdTBiO3:>M2PfhP`EL@`93
 R7
 31
-Z32 !s108 1701452970.782000
-Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/Registrador/registrador.vhd|
-Z34 !s107 C:/Users/Acer/Downloads/Vendingmachine/Registrador/registrador.vhd|
+Z35 !s108 1701480266.242000
+Z36 !s90 -reportprogress|300|-93|-work|work|D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Registrador/registrador.vhd|
+Z37 !s107 D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Registrador/registrador.vhd|
 R11
 R12
 !s100 6z8[b2H<dja4`lPRJAmHE0
@@ -177,72 +177,72 @@ L18
 VCTD6RH^K2Di?K1_CNG6NC3
 R7
 31
-R32
-R33
-R34
+R35
+R36
+R37
 R11
 R12
 !s100 kV9bihZZ1GMl9RM]nIBGg0
 !i10b 1
 Erom
-R1
-R13
+Z38 w1701474839
+R14
 R2
 R3
 R4
-Z35 8C:/Users/Acer/Downloads/Vendingmachine/ROM_Preco/rom.vhd
-Z36 FC:/Users/Acer/Downloads/Vendingmachine/ROM_Preco/rom.vhd
+Z39 8D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/ROM_Preco/rom.vhd
+Z40 FD:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/ROM_Preco/rom.vhd
 l0
 L5
 Vaml`@65l^e7QWZKTBj`Y^0
 R7
 31
-Z37 !s108 1701452970.869000
-Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/ROM_Preco/rom.vhd|
-Z39 !s107 C:/Users/Acer/Downloads/Vendingmachine/ROM_Preco/rom.vhd|
+Z41 !s108 1701480266.399000
+Z42 !s90 -reportprogress|300|-93|-work|work|D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/ROM_Preco/rom.vhd|
+Z43 !s107 D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/ROM_Preco/rom.vhd|
 R11
 R12
 !s100 Bz>ncz3nKZDE2b]EiM9593
 !i10b 1
 Artl
-R13
+R14
 R2
 R3
 DEx4 work 3 rom 0 22 aml`@65l^e7QWZKTBj`Y^0
 l24
 L12
-V=[mZ2_B0KkV<=S1W[kjgN1
+VAGP?[k8TH]HFCB@ddTN]L3
 R7
 31
-R37
-R38
-R39
+R41
+R42
+R43
 R11
 R12
-!s100 =?]cJioijBTMhaZJEJN1O2
+!s100 mWSnDB4:RKB<jbL_G`XR;3
 !i10b 1
 Esomador
-R1
-R13
+R32
+R14
 R2
 R3
 R4
-Z40 8C:/Users/Acer/Downloads/Vendingmachine/Somador/somador.vhd
-Z41 FC:/Users/Acer/Downloads/Vendingmachine/Somador/somador.vhd
+Z44 8D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Somador/somador.vhd
+Z45 FD:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Somador/somador.vhd
 l0
 L5
 VeJZJUA@d[f7n0722:OQj23
 R7
 31
-Z42 !s108 1701452970.986000
-Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/Somador/somador.vhd|
-Z44 !s107 C:/Users/Acer/Downloads/Vendingmachine/Somador/somador.vhd|
+Z46 !s108 1701480266.572000
+Z47 !s90 -reportprogress|300|-93|-work|work|D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Somador/somador.vhd|
+Z48 !s107 D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Somador/somador.vhd|
 R11
 R12
 !s100 baS4?O@;?JIXPAk@P8cLZ3
 !i10b 1
 Artl
-R13
+R14
 R2
 R3
 DEx4 work 7 somador 0 22 eJZJUA@d[f7n0722:OQj23
@@ -251,35 +251,35 @@ L16
 V0ILj3G^B]lTFM^o7HX8V80
 R7
 31
-R42
-R43
-R44
+R46
+R47
+R48
 R11
 R12
 !s100 LOgH9iiXTGgUMci>GOnFo3
 !i10b 1
 Esubtrator
-R1
-R13
+R32
+R14
 R2
 R3
 R4
-Z45 8C:/Users/Acer/Downloads/Vendingmachine/Subtrator/subtrator.vhd
-Z46 FC:/Users/Acer/Downloads/Vendingmachine/Subtrator/subtrator.vhd
+Z49 8D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Subtrator/subtrator.vhd
+Z50 FD:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Subtrator/subtrator.vhd
 l0
 L5
 VPnMFcR:2Aia<b5mMPESlz1
 R7
 31
-Z47 !s108 1701452971.074000
-Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/Subtrator/subtrator.vhd|
-Z49 !s107 C:/Users/Acer/Downloads/Vendingmachine/Subtrator/subtrator.vhd|
+Z51 !s108 1701480266.681000
+Z52 !s90 -reportprogress|300|-93|-work|work|D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Subtrator/subtrator.vhd|
+Z53 !s107 D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/Subtrator/subtrator.vhd|
 R11
 R12
 !s100 dW1C7[Kz5oh`I]P?P9g8^2
 !i10b 1
 Artl
-R13
+R14
 R2
 R3
 DEx4 work 9 subtrator 0 22 PnMFcR:2Aia<b5mMPESlz1
@@ -288,22 +288,22 @@ L16
 V7kLRF]]UmC`jL:Lic>c8;0
 R7
 31
-R47
-R48
-R49
+R51
+R52
+R53
 R11
 R12
 !s100 Uz52M3oRY7;USZ6=dA0D60
 !i10b 1
 Etb_vendingmachine
-Z50 w1701452853
-Z51 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
-Z52 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z54 w1701479993
+Z55 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z56 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 R2
 R3
 R4
-Z53 8C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/tb_VendingMachine.vhd
-Z54 FC:/Users/Acer/Downloads/Vendingmachine/VendingMachine/tb_VendingMachine.vhd
+Z57 8D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/VendingMachine/tb_VendingMachine.vhd
+Z58 FD:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/VendingMachine/tb_VendingMachine.vhd
 l0
 L6
 V_;TSzMd5H<aC^hTmLdA=h1
@@ -311,65 +311,65 @@ V_;TSzMd5H<aC^hTmLdA=h1
 R7
 31
 !i10b 1
-Z55 !s108 1701452971.601000
-Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/tb_VendingMachine.vhd|
-Z57 !s107 C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/tb_VendingMachine.vhd|
+Z59 !s108 1701480267.158000
+Z60 !s90 -reportprogress|300|-93|-work|work|D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/VendingMachine/tb_VendingMachine.vhd|
+Z61 !s107 D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/VendingMachine/tb_VendingMachine.vhd|
 R11
 R12
 Atestbench
-R51
-R52
+R55
+R56
 R2
 R3
 DEx4 work 17 tb_vendingmachine 0 22 _;TSzMd5H<aC^hTmLdA=h1
-l27
+l25
 L9
-VD=ASGPzcRN8KVfkj4S<XH3
-!s100 ^DFdmKN_[@QAFhz=E=e:X1
+V@m>TBT]c_[VH>MW4Rgo013
+!s100 ;20XPk=FRNa1lRg?MInd01
 R7
 31
 !i10b 1
-R55
-R56
-R57
+R59
+R60
+R61
 R11
 R12
 Evendingmachine
-Z58 w1701452679
-R52
-R51
+Z62 w1701479853
+R56
+R55
 R2
 R3
 R4
-Z59 8C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/VendingMachine.vhd
-Z60 FC:/Users/Acer/Downloads/Vendingmachine/VendingMachine/VendingMachine.vhd
+Z63 8D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/VendingMachine/VendingMachine.vhd
+Z64 FD:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/VendingMachine/VendingMachine.vhd
 l0
 L5
-Vbc]o7MjH;zHbH;@B73bXU1
+VLlY_doXSQ0CNkgHCNNSzh1
 R7
 31
-Z61 !s108 1701452971.354000
-Z62 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/VendingMachine.vhd|
-Z63 !s107 C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/VendingMachine.vhd|
+Z65 !s108 1701480267.027000
+Z66 !s90 -reportprogress|300|-93|-work|work|D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/VendingMachine/VendingMachine.vhd|
+Z67 !s107 D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/VendingMachine/VendingMachine.vhd|
 R11
 R12
-!s100 mWfeQ>UO`Z5zaT^EPb5[l1
+!s100 N3gA>7CO]f@Un1LkN7Zkl1
 !i10b 1
 Artl
-R52
-R51
+R56
+R55
 R2
 R3
-DEx4 work 14 vendingmachine 0 22 bc]o7MjH;zHbH;@B73bXU1
+DEx4 work 14 vendingmachine 0 22 LlY_doXSQ0CNkgHCNNSzh1
 l62
-L19
-VEKeVZDcR4]fcmdd=U8Cni1
+L17
+VUd:nE1I<AmZ6R>Wed2M`12
 R7
 31
-R61
-R62
-R63
+R65
+R66
+R67
 R11
 R12
-!s100 WoleEk^RhMT6?c_2K0Wnh0
+!s100 BBnDDI[;5A1em7aF[6bY02
 !i10b 1

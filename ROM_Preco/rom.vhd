@@ -18,8 +18,8 @@ architecture rtl of ROM is
         x"03", -- Para produto 3
         x"04", -- Para produto 4
         x"05", -- Para produto 5
-        x"08", -- Para produto 6
-        x"0A"  -- Para produto 7
+        x"06", -- Para produto 6
+        x"07"  -- Para produto 7
     );
 begin
     preco <= ROM_data(to_integer(unsigned(endereco)));

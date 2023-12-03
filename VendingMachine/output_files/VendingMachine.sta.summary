@@ -3,64 +3,64 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'CLOCK'
-Slack : -2.179
-TNS   : -28.601
+Slack : -2.251
+TNS   : -37.133
 
 Type  : Slow Model Setup 'Controladora:Ctrl|state.calcula'
-Slack : -1.355
-TNS   : -3.063
+Slack : -0.477
+TNS   : -1.362
 
 Type  : Slow Model Hold 'CLOCK'
-Slack : -1.401
-TNS   : -11.383
+Slack : -1.277
+TNS   : -9.030
 
 Type  : Slow Model Hold 'Controladora:Ctrl|state.calcula'
-Slack : 0.646
+Slack : 0.113
 TNS   : 0.000
 
 Type  : Slow Model Recovery 'CLOCK'
-Slack : -1.005
-TNS   : -9.333
+Slack : -1.009
+TNS   : -16.855
 
 Type  : Slow Model Removal 'CLOCK'
-Slack : 1.201
+Slack : 1.263
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'CLOCK'
 Slack : -1.380
-TNS   : -23.380
+TNS   : -31.380
 
 Type  : Slow Model Minimum Pulse Width 'Controladora:Ctrl|state.calcula'
 Slack : 0.500
 TNS   : 0.000
 
 Type  : Fast Model Setup 'CLOCK'
-Slack : -0.369
-TNS   : -2.724
+Slack : -0.444
+TNS   : -2.902
 
 Type  : Fast Model Setup 'Controladora:Ctrl|state.calcula'
-Slack : -0.211
-TNS   : -0.249
+Slack : 0.179
+TNS   : 0.000
 
 Type  : Fast Model Hold 'CLOCK'
-Slack : -0.914
-TNS   : -8.994
+Slack : -0.962
+TNS   : -7.813
 
 Type  : Fast Model Hold 'Controladora:Ctrl|state.calcula'
-Slack : 0.500
+Slack : 0.223
 TNS   : 0.000
 
 Type  : Fast Model Recovery 'CLOCK'
-Slack : -0.016
-TNS   : -0.128
+Slack : -0.035
+TNS   : -0.280
 
 Type  : Fast Model Removal 'CLOCK'
-Slack : 0.772
+Slack : 0.819
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'CLOCK'
 Slack : -1.380
-TNS   : -23.380
+TNS   : -31.380
 
 Type  : Fast Model Minimum Pulse Width 'Controladora:Ctrl|state.calcula'
 Slack : 0.500

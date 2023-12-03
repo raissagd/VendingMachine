@@ -59,7 +59,7 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 CHIP  "VendingMachine"  ASSIGNED TO AN: EP2C5T144C6
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
@@ -81,11 +81,11 @@ DATA0                        : 14        : input  :                   :         
 DCLK                         : 15        :        :                   :         : 1         :                
 nCE                          : 16        :        :                   :         : 1         :                
 CLOCK                        : 17        : input  : 3.3-V LVTTL       :         : 1         : N              
-Dinheiro[1]                  : 18        : input  : 3.3-V LVTTL       :         : 1         : N              
+Dinheiro[4]                  : 18        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND                          : 19        : gnd    :                   :         :           :                
 nCONFIG                      : 20        :        :                   :         : 1         :                
-Dinheiro[2]                  : 21        : input  : 3.3-V LVTTL       :         : 1         : N              
-Dinheiro[3]                  : 22        : input  : 3.3-V LVTTL       :         : 1         : N              
+Dinheiro[5]                  : 21        : input  : 3.3-V LVTTL       :         : 1         : N              
+Dinheiro[6]                  : 22        : input  : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : 23        : power  :                   : 3.3V    : 1         :                
 GND*                         : 24        :        :                   :         : 1         :                
 GND*                         : 25        :        :                   :         : 1         :                
@@ -103,7 +103,7 @@ GND_PLL1                     : 36        : gnd    :                   :         
 VCCA_PLL1                    : 37        : power  :                   : 1.2V    :           :                
 GNDA_PLL1                    : 38        : gnd    :                   :         :           :                
 GND                          : 39        : gnd    :                   :         :           :                
-Produto[1]                   : 40        : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : 40        :        :                   :         : 4         :                
 GND*                         : 41        :        :                   :         : 4         :                
 GND*                         : 42        :        :                   :         : 4         :                
 GND*                         : 43        :        :                   :         : 4         :                
@@ -114,60 +114,60 @@ GND*                         : 47        :        :                   :         
 GND*                         : 48        :        :                   :         : 4         :                
 GND                          : 49        : gnd    :                   :         :           :                
 VCCINT                       : 50        : power  :                   : 1.2V    :           :                
-GND*                         : 51        :        :                   :         : 4         :                
+Dinheiro[2]                  : 51        : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : 52        :        :                   :         : 4         :                
-GND*                         : 53        :        :                   :         : 4         :                
+Troco[6]                     : 53        : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : 54        : power  :                   : 3.3V    : 4         :                
-GND*                         : 55        :        :                   :         : 4         :                
+Troco[7]                     : 55        : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : 56        : gnd    :                   :         :           :                
-Produto[2]                   : 57        : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : 58        :        :                   :         : 4         :                
-GND*                         : 59        :        :                   :         : 4         :                
-GND*                         : 60        :        :                   :         : 4         :                
+Produto_liberado             : 57        : output : 3.3-V LVTTL       :         : 4         : N              
+Dinheiro[3]                  : 58        : input  : 3.3-V LVTTL       :         : 4         : N              
+Troco[0]                     : 59        : output : 3.3-V LVTTL       :         : 4         : N              
+Troco[4]                     : 60        : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : 61        : gnd    :                   :         :           :                
 VCCINT                       : 62        : power  :                   : 1.2V    :           :                
-Troco_ativado                : 63        : output : 3.3-V LVTTL       :         : 4         : N              
-Dinheiro[7]                  : 64        : input  : 3.3-V LVTTL       :         : 4         : N              
-Dinheiro[0]                  : 65        : input  : 3.3-V LVTTL       :         : 4         : N              
+Produto_selecionado[0]       : 63        : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : 64        :        :                   :         : 4         :                
+GND*                         : 65        :        :                   :         : 4         :                
 VCCIO4                       : 66        : power  :                   : 3.3V    : 4         :                
-Produto[0]                   : 67        : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : 67        :        :                   :         : 4         :                
 GND                          : 68        : gnd    :                   :         :           :                
 GND*                         : 69        :        :                   :         : 4         :                
 GND*                         : 70        :        :                   :         : 4         :                
 GND*                         : 71        :        :                   :         : 4         :                
 GND*                         : 72        :        :                   :         : 4         :                
-GND*                         : 73        :        :                   :         : 3         :                
-GND*                         : 74        :        :                   :         : 3         :                
-GND*                         : 75        :        :                   :         : 3         :                
+Display[2]                   : 73        : output : 3.3-V LVTTL       :         : 3         : N              
+Display[4]                   : 74        : output : 3.3-V LVTTL       :         : 3         : N              
+Display[5]                   : 75        : output : 3.3-V LVTTL       :         : 3         : N              
 ~LVDS41p/nCEO~               : 76        : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : 77        : power  :                   : 3.3V    : 3         :                
 GND                          : 78        : gnd    :                   :         :           :                
-Troco[1]                     : 79        : output : 3.3-V LVTTL       :         : 3         : N              
-Produto_liberado             : 80        : output : 3.3-V LVTTL       :         : 3         : N              
-Troco[0]                     : 81        : output : 3.3-V LVTTL       :         : 3         : N              
+Display[1]                   : 79        : output : 3.3-V LVTTL       :         : 3         : N              
+Display[6]                   : 80        : output : 3.3-V LVTTL       :         : 3         : N              
+Display[3]                   : 81        : output : 3.3-V LVTTL       :         : 3         : N              
 nSTATUS                      : 82        :        :                   :         : 3         :                
 CONF_DONE                    : 83        :        :                   :         : 3         :                
 MSEL1                        : 84        :        :                   :         : 3         :                
 MSEL0                        : 85        :        :                   :         : 3         :                
-Troco[7]                     : 86        : output : 3.3-V LVTTL       :         : 3         : N              
-Troco[4]                     : 87        : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : 86        :        :                   :         : 3         :                
+Display[0]                   : 87        : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : 88        :        :                   :         : 3         :                
 GND+                         : 89        :        :                   :         : 3         :                
 GND+                         : 90        :        :                   :         : 3         :                
 GND+                         : 91        :        :                   :         : 3         :                
-Dinheiro[5]                  : 92        : input  : 3.3-V LVTTL       :         : 3         : N              
-Dinheiro[6]                  : 93        : input  : 3.3-V LVTTL       :         : 3         : N              
-Produto_selecionado[1]       : 94        : input  : 3.3-V LVTTL       :         : 3         : N              
+Troco[3]                     : 92        : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : 93        :        :                   :         : 3         :                
+GND*                         : 94        :        :                   :         : 3         :                
 VCCIO3                       : 95        : power  :                   : 3.3V    : 3         :                
-Troco[5]                     : 96        : output : 3.3-V LVTTL       :         : 3         : N              
-Produto_selecionado[0]       : 97        : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : 96        :        :                   :         : 3         :                
+GND*                         : 97        :        :                   :         : 3         :                
 GND                          : 98        : gnd    :                   :         :           :                
-Troco[2]                     : 99        : output : 3.3-V LVTTL       :         : 3         : N              
-Display[6]                   : 100       : output : 3.3-V LVTTL       :         : 3         : N              
-Display[0]                   : 101       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : 99        :        :                   :         : 3         :                
+GND*                         : 100       :        :                   :         : 3         :                
+GND*                         : 101       :        :                   :         : 3         :                
 VCCIO3                       : 102       : power  :                   : 3.3V    : 3         :                
-Troco[3]                     : 103       : output : 3.3-V LVTTL       :         : 3         : N              
-Troco[6]                     : 104       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : 103       :        :                   :         : 3         :                
+GND*                         : 104       :        :                   :         : 3         :                
 GND                          : 105       : gnd    :                   :         :           :                
 GND_PLL2                     : 106       : gnd    :                   :         :           :                
 VCCD_PLL2                    : 107       : power  :                   : 1.2V    :           :                
@@ -176,28 +176,28 @@ VCCA_PLL2                    : 109       : power  :                   : 1.2V    
 GNDA_PLL2                    : 110       : gnd    :                   :         :           :                
 GND                          : 111       : gnd    :                   :         :           :                
 GND*                         : 112       :        :                   :         : 2         :                
-Produto_selecionado[2]       : 113       : input  : 3.3-V LVTTL       :         : 2         : N              
-Display[4]                   : 114       : output : 3.3-V LVTTL       :         : 2         : N              
-Display[1]                   : 115       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 113       :        :                   :         : 2         :                
+GND*                         : 114       :        :                   :         : 2         :                
+GND*                         : 115       :        :                   :         : 2         :                
 VCCIO2                       : 116       : power  :                   : 3.3V    : 2         :                
 GND                          : 117       : gnd    :                   :         :           :                
-Display[2]                   : 118       : output : 3.3-V LVTTL       :         : 2         : N              
-Confirmar                    : 119       : input  : 3.3-V LVTTL       :         : 2         : N              
-Display[3]                   : 120       : output : 3.3-V LVTTL       :         : 2         : N              
-Display[5]                   : 121       : output : 3.3-V LVTTL       :         : 2         : N              
-Dinheiro[4]                  : 122       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 118       :        :                   :         : 2         :                
+GND*                         : 119       :        :                   :         : 2         :                
+Produto_selecionado[2]       : 120       : input  : 3.3-V LVTTL       :         : 2         : N              
+Troco[2]                     : 121       : output : 3.3-V LVTTL       :         : 2         : N              
+Produto_selecionado[1]       : 122       : input  : 3.3-V LVTTL       :         : 2         : N              
 GND                          : 123       : gnd    :                   :         :           :                
 VCCINT                       : 124       : power  :                   : 1.2V    :           :                
-GND*                         : 125       :        :                   :         : 2         :                
-GND*                         : 126       :        :                   :         : 2         :                
+Confirmar                    : 125       : input  : 3.3-V LVTTL       :         : 2         : N              
+Troco[1]                     : 126       : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO2                       : 127       : power  :                   : 3.3V    : 2         :                
 GND                          : 128       : gnd    :                   :         :           :                
-GND*                         : 129       :        :                   :         : 2         :                
+Troco[5]                     : 129       : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : 130       : gnd    :                   :         :           :                
 VCCINT                       : 131       : power  :                   : 1.2V    :           :                
-GND*                         : 132       :        :                   :         : 2         :                
-GND*                         : 133       :        :                   :         : 2         :                
-GND*                         : 134       :        :                   :         : 2         :                
+Dinheiro[0]                  : 132       : input  : 3.3-V LVTTL       :         : 2         : N              
+Dinheiro[7]                  : 133       : input  : 3.3-V LVTTL       :         : 2         : N              
+Dinheiro[1]                  : 134       : input  : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 135       :        :                   :         : 2         :                
 GND*                         : 136       :        :                   :         : 2         :                
 GND*                         : 137       :        :                   :         : 2         :                

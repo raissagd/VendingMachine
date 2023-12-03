@@ -10,8 +10,6 @@ entity VendingMachine is
 		Produto_selecionado: in std_logic_vector(2 downto 0);
 		Troco: out std_logic_vector(7 downto 0);
 		Display: out std_logic_vector(6 downto 0);
-		Produto: out std_logic_vector(2 downto 0);
-		Troco_ativado: out std_logic; 
 		Produto_liberado: out std_logic 
     );
 end VendingMachine;
@@ -21,6 +19,7 @@ architecture RTL OF VendingMachine is
 	signal fio_Dinheiro_eq_0, fio_Preco_eq_0: std_logic;
 	signal fio_Produto_selecionado_clr, fio_Produto_selecionado_ld: std_logic;
 	signal fio_Dinheiro_total_ld, fio_Dinheiro_total_clr: std_logic;
+	signal fio_Troco_ld, fio_Troco_clr: std_logic;
 	signal fio_Preco_ld, fio_Preco_clr: std_logic;
 	signal fio_Mensagem_clr, fio_Mensagem_ld: std_logic;
 	signal fio_Mensagem_do_sistema: std_logic_vector(2 downto 0);
@@ -29,8 +28,8 @@ architecture RTL OF VendingMachine is
     port (
 		 RESET, CLOCK, Confirmar: in std_logic;
 		 DltP, DeqP, DgtP, Preco_eq_0, Dinheiro_eq_0: in std_logic;
-		 Troco_ativado, Produto_liberado: out std_logic;
-		 Produto_selecionado_clr, Produto_selecionado_ld, Mensagem_ld, Mensagem_clr, Dinheiro_total_ld, Dinheiro_total_clr: out std_logic;
+		 Produto_liberado: out std_logic;
+		 Produto_selecionado_clr, Produto_selecionado_ld, Mensagem_ld, Mensagem_clr, Dinheiro_total_ld, Dinheiro_total_clr, Troco_clr, Troco_ld: out std_logic;
 		 Mensagem_do_sistema: out std_logic_vector(2 downto 0)
 		 );
 	end component;
@@ -46,6 +45,8 @@ architecture RTL OF VendingMachine is
 			Dinheiro_total_clr: in std_logic;
 			Mensagem_clr: in std_logic; 
 			Mensagem_ld: in std_logic;
+		   Troco_clr: in std_logic; 
+		   Troco_ld: in std_logic; 	
 			Mensagem_do_sistema: in std_logic_vector(2 downto 0);
 					
 			DgtP: out std_logic;
@@ -54,7 +55,6 @@ architecture RTL OF VendingMachine is
 			Preco_eq_0: out std_logic;
 			Dinheiro_eq_0: out std_logic;
 			Troco : out std_logic_vector(7 downto 0);
-			Produto: out std_logic_vector(2 downto 0);
 			Display : out std_logic_vector(6 downto 0)
 		);
 	end component;
@@ -79,9 +79,9 @@ architecture RTL OF VendingMachine is
 				DeqP                         => fio_DeqP,
 				Preco_eq_0                   => fio_Preco_eq_0,
 				Dinheiro_eq_0                => fio_Dinheiro_eq_0,
-				
-				Troco                        => Troco,
-				Produto                      => Produto,
+			   Troco_clr                    => fio_Troco_clr,
+		      Troco_ld                     => fio_Troco_ld,
+		 		Troco                        => Troco,
 				Display                      => Display
 			);
 	
@@ -100,11 +100,12 @@ architecture RTL OF VendingMachine is
 				Produto_selecionado_ld       => fio_Produto_selecionado_ld,
 				Dinheiro_total_ld            => fio_Dinheiro_total_ld,
 				Dinheiro_total_clr           => fio_Dinheiro_total_clr,
+				Troco_clr						  => fio_Troco_clr,
+				Troco_ld                     => fio_Troco_ld,
 				Mensagem_clr                 => fio_Mensagem_clr,
 				Mensagem_ld                  => fio_Mensagem_ld,
 				Mensagem_do_sistema          => fio_Mensagem_do_sistema,
 				
-				Troco_ativado                => Troco_ativado, 
 				Produto_liberado             => Produto_liberado 
 			);
 end RTL ;

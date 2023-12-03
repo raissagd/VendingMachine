@@ -1,6 +1,6 @@
 EDA Netlist Writer report for VendingMachine
-Fri Dec 01 14:49:14 2023
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Dec 01 22:20:02 2023
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Dec 01 14:49:14 2023 ;
+; EDA Netlist Writer Status ; Successful - Fri Dec 01 22:20:02 2023 ;
 ; Revision Name             ; VendingMachine                        ;
 ; Top-level Entity Name     ; VendingMachine                        ;
 ; Family                    ; Cyclone II                            ;
@@ -66,31 +66,31 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                            ;
-+-------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                       ;
-+-------------------------------------------------------------------------------------------------------+
-; C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/simulation/modelsim/VendingMachine.vho          ;
-; C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/simulation/modelsim/VendingMachine_fast.vho     ;
-; C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/simulation/modelsim/VendingMachine_vhd.sdo      ;
-; C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/simulation/modelsim/VendingMachine_vhd_fast.sdo ;
-+-------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                             ;
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                        ;
++----------------------------------------------------------------------------------------------------------------------------------------+
+; D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/VendingMachine/simulation/modelsim/VendingMachine.vho          ;
+; D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/VendingMachine/simulation/modelsim/VendingMachine_fast.vho     ;
+; D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/VendingMachine/simulation/modelsim/VendingMachine_vhd.sdo      ;
+; D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/VendingMachine/simulation/modelsim/VendingMachine_vhd_fast.sdo ;
++----------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit EDA Netlist Writer
+Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Dec 01 14:49:14 2023
+    Info: Processing started: Fri Dec 01 22:20:01 2023
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off VendingMachine -c VendingMachine
-Info (204026): Generated files "VendingMachine.vho", "VendingMachine_fast.vho", "VendingMachine_vhd.sdo" and "VendingMachine_vhd_fast.sdo" in directory "C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/simulation/modelsim/" for EDA simulation tool
-Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4519 megabytes
-    Info: Processing ended: Fri Dec 01 14:49:14 2023
-    Info: Elapsed time: 00:00:00
+Info (204026): Generated files "VendingMachine.vho", "VendingMachine_fast.vho", "VendingMachine_vhd.sdo" and "VendingMachine_vhd_fast.sdo" in directory "D:/Hermes/tp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/VendingMachine-main/VendingMachine/simulation/modelsim/" for EDA simulation tool
+Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 335 megabytes
+    Info: Processing ended: Fri Dec 01 22:20:02 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

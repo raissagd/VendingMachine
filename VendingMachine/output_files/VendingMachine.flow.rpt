@@ -1,6 +1,6 @@
 Flow report for VendingMachine
-Fri Dec 01 14:49:14 2023
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Dec 01 22:20:02 2023
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri Dec 01 14:49:14 2023           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Flow Status                        ; Successful - Fri Dec 01 22:20:02 2023           ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; VendingMachine                                  ;
 ; Top-level Entity Name              ; VendingMachine                                  ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 63 / 4,608 ( 1 % )                              ;
-;     Total combinational functions  ; 63 / 4,608 ( 1 % )                              ;
-;     Dedicated logic registers      ; 22 / 4,608 ( < 1 % )                            ;
-; Total registers                    ; 22                                              ;
-; Total pins                         ; 33 / 89 ( 37 % )                                ;
+; Total logic elements               ; 61 / 4,608 ( 1 % )                              ;
+;     Total combinational functions  ; 56 / 4,608 ( 1 % )                              ;
+;     Dedicated logic registers      ; 30 / 4,608 ( < 1 % )                            ;
+; Total registers                    ; 30                                              ;
+; Total pins                         ; 29 / 89 ( 33 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 119,808 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 26 ( 0 % )                                  ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/01/2023 14:49:03 ;
+; Start date & time ; 12/01/2023 22:19:55 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; VendingMachine      ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------+---------------+-------------+-------------------+
 ; Assignment Name                      ; Value                           ; Default Value ; Entity Name ; Section Id        ;
 +--------------------------------------+---------------------------------+---------------+-------------+-------------------+
-; COMPILER_SIGNATURE_ID                ; 251413962952628.170145294316712 ; --            ; --          ; --                ;
+; COMPILER_SIGNATURE_ID                ; 229335799692431.170147999503440 ; --            ; --          ; --                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; tb_VendingMachine ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_VendingMachine               ; --            ; --          ; eda_simulation    ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                            ; --            ; --          ; eda_simulation    ;
@@ -84,7 +84,7 @@ applicable agreement for further details.
 ; EDA_TEST_BENCH_FILE                  ; tb_VendingMachine.vhd           ; --            ; --          ; tb_VendingMachine ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_VendingMachine               ; --            ; --          ; tb_VendingMachine ;
 ; EDA_TEST_BENCH_NAME                  ; tb_VendingMachine               ; --            ; --          ; eda_simulation    ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 100 ns                          ; --            ; --          ; tb_VendingMachine ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 120 ns                          ; --            ; --          ; tb_VendingMachine ;
 ; PARTITION_COLOR                      ; 16764057                        ; --            ; --          ; Top               ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top               ;
 ; PARTITION_NETLIST_TYPE               ; SOURCE                          ; --            ; --          ; Top               ;
@@ -97,12 +97,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4625 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:02     ; 1.0                     ; 4798 MB             ; 00:00:03                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4537 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4546 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4507 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:07     ; --                      ; --                  ; 00:00:06                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 393 MB              ; 00:00:01                           ;
+; Fitter                    ; 00:00:01     ; 1.0                     ; 431 MB              ; 00:00:02                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 350 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 322 MB              ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 323 MB              ; 00:00:00                           ;
+; Total                     ; 00:00:05     ; --                      ; --                  ; 00:00:04                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,11 +111,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-1TAHK6J  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-1TAHK6J  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-1TAHK6J  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-1TAHK6J  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1TAHK6J  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-JD5RT4T  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-JD5RT4T  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-JD5RT4T  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-JD5RT4T  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-JD5RT4T  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

@@ -4,15 +4,17 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity datapath is
     port (
-          Produto_selecionado: in std_logic_vector(2 downto 0);
+        Produto_selecionado: in std_logic_vector(2 downto 0);
 		  Dinheiro: in std_logic_vector(7 downto 0);
 		  CLOCK: in std_logic;
 		  Produto_selecionado_ld: in std_logic;
 		  Produto_selecionado_clr: in std_logic;
 		  Dinheiro_total_ld: in std_logic;
 		  Dinheiro_total_clr: in std_logic;
-		  Mensagem_clr: in std_logic; -- nao ta no tp
-		  Mensagem_ld: in std_logic; -- nao ta no tp
+		  Mensagem_clr: in std_logic; 
+		  Mensagem_ld: in std_logic; 
+		  Troco_clr: in std_logic; 
+		  Troco_ld: in std_logic; 		  
 		  Mensagem_do_sistema: in std_logic_vector(2 downto 0);
 		  
 		  DgtP: out std_logic;
@@ -20,9 +22,8 @@ entity datapath is
 		  DeqP: out std_logic;
 		  Preco_eq_0: out std_logic;
 		  Dinheiro_eq_0: out std_logic;
-		  Troco : out std_logic_vector(7 downto 0);
-		  Produto: out std_logic_vector(2 downto 0);
-          Display : out std_logic_vector(6 downto 0)
+		  Troco : out std_logic_vector(7 downto 0) := "00000000";
+        Display : out std_logic_vector(6 downto 0)
     );
 end datapath;
 
@@ -96,7 +97,7 @@ architecture arch of datapath is
 	signal fio_somador_dinheiro_atual: std_logic_vector(7 downto 0);
 	signal fio_mensagem_display: std_logic_vector(2 downto 0);
 	signal fio_preco_produto: std_logic_vector(7 downto 0);
-	
+	signal fio_subtrator_reg_troco: std_logic_vector(7 downto 0);
 begin
    -- Instância dos componentes
 	Reg_Produto: registrador
@@ -136,6 +137,19 @@ begin
 			  enable => '1',
 			  D      => Mensagem_do_sistema,
 			  Q      => fio_mensagem_display
+        );
+		  
+	Reg_Troco : registrador
+		generic map(
+            W => 8
+        )
+        port map(
+			  reset => Troco_clr,
+			  clock => CLOCK,
+			  load  => Troco_ld,
+			  enable => '1',
+			  D      => fio_subtrator_reg_troco,
+			  Q      => Troco
         );
 	
 	Comparador_prod_valido: comparador
@@ -193,7 +207,7 @@ begin
 		 port map(
 			a => fio_valor_dinheiro_atual,
 			b => fio_preco_produto,
-			result => Troco
+			result => fio_subtrator_reg_troco
 		 );
 		 
    BCD_Display: BCD_7seg 
