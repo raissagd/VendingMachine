@@ -43,15 +43,22 @@ begin
 
    process
 		begin
-		wait for 10 ns; 
-		Produto_selecionado <= "011"; -- selecionou o produto
-		wait for 20 ns;
-		Confirmar <= '1';
-		wait for 20 ns;
-		Dinheiro <= "00000011";
-		wait for 20 ns;
+		--Produto_selecionado <= "011"; - 130 ns
+		--Confirmar <= '1';
+		--Dinheiro <= "00000110";
 		
-		------------------------------
-      wait;
+		--Produto_selecionado <= "100"; -- 100 ns
+		--Confirmar <= '0';
+		--Dinheiro <= "00000000";
+
+		Produto_selecionado <= "111"; -- 220 ns
+		Confirmar <= '1';
+		Dinheiro <= "00000000";
+		wait for 90 ns;
+		Dinheiro <= "00000101";
+		wait for 20 ns;
+		Dinheiro <= "00000110";
+
+		wait;
 	end process;
 end testbench;

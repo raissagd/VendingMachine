@@ -98,6 +98,7 @@ architecture arch of datapath is
 	signal fio_mensagem_display: std_logic_vector(2 downto 0);
 	signal fio_preco_produto: std_logic_vector(7 downto 0);
 	signal fio_subtrator_reg_troco: std_logic_vector(7 downto 0);
+	signal fio_regSomador_regDinheiro: std_logic_vector(7 downto 0);
 begin
    -- Instância dos componentes
 	Reg_Produto: registrador
@@ -122,7 +123,7 @@ begin
 			  clock => CLOCK,
 			  load  => Dinheiro_total_ld,
 			  enable => '1',
-			  D      => fio_somador_dinheiro_atual,
+			  D      => fio_regSomador_regDinheiro,
 			  Q      => fio_valor_dinheiro_atual
         ); 
 		  
@@ -151,16 +152,29 @@ begin
 			  D      => fio_subtrator_reg_troco,
 			  Q      => Troco
         );
-	
-	Comparador_prod_valido: comparador
-		generic map (
+		  
+	Reg_DinheiroAtual : registrador
+		generic map(
 			W => 8
 		)
-		port map (
-			a => fio_preco_produto,
-			b => (others => '0'),
-			igual => Preco_eq_0 -- não sei se pode simplesmente nao mapear as outras portas
+		port map(
+			reset => Dinheiro_total_clr,
+			clock => CLOCK,
+			load  => Dinheiro_total_ld,
+			enable => '1',
+			D      => fio_somador_dinheiro_atual,
+			Q      => fio_regSomador_regDinheiro
 		);
+
+ Comparador_prod_valido: comparador
+        generic map (
+            W => 8
+        )
+        port map (
+            a     => fio_preco_produto,
+            b     => (others => '0'),
+            igual => Preco_eq_0
+        );
 		
 	Comparador_preco: comparador
 		generic map (
@@ -174,15 +188,15 @@ begin
 			igual	=> DeqP
 		);
 		
-	Comparador_entrada_dinheiro: comparador
-		generic map (
-			W => 8
-		)
-		port map (
-			a => Dinheiro,
-			b => (others => '0'),
-			igual => Dinheiro_eq_0 -- não sei se pode simplesmente nao mapear as outras portas
-		);
+    Comparador_entrada_dinheiro: comparador
+        generic map (
+            W => 8
+        )
+        port map (
+            a     => Dinheiro,
+            b     => (others => '0'),
+            igual => Dinheiro_eq_0
+        );
 	
 	Rom_preco_produto: ROM
 		port map(

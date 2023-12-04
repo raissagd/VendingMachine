@@ -13,7 +13,7 @@ entity Controladora is
 end Controladora;
 
 architecture arch of Controladora is
-    type state_type is (inicio, validaProduto, confirma, cancela, espera, calcula, troco, entrega, invalido);
+    type state_type is (inicio, validaProduto, confirma, cancela, espera, calcula, troco, entrega);
 	 signal state, next_state: state_type;
 	 
 begin
@@ -21,13 +21,13 @@ begin
 		begin
 			case state is
 				when inicio =>
-						Produto_selecionado_ld <= '1';
-						Produto_selecionado_clr <= '0';
+						Produto_selecionado_ld <= '0';
+						Produto_selecionado_clr <= '1';
 						Mensagem_do_sistema <= "001";
 						Mensagem_ld <= '1';
 						Mensagem_clr <= '0';
 						Dinheiro_total_ld <= '0';
-						Dinheiro_total_clr <= '0';
+						Dinheiro_total_clr <= '1';
 						Troco_clr <= '1';
 						Troco_ld <= '0';
 						Produto_liberado <= '0';
@@ -37,7 +37,7 @@ begin
 						Produto_selecionado_clr <= '0';
 						Mensagem_clr <= '0';
 						Dinheiro_total_ld <= '0';
-						Dinheiro_total_clr <= '0';
+						Dinheiro_total_clr <= '1';
 						Produto_liberado <= '0';
 						Troco_clr <= '0';
 						Troco_ld <= '0';
@@ -53,7 +53,7 @@ begin
 						else
 							Produto_selecionado_ld <= '0';
 							Mensagem_ld <= '1';
-							next_state <= invalido;
+							next_state <= cancela;
 						end if;
 						 
 				when confirma =>
@@ -63,7 +63,7 @@ begin
 						Mensagem_ld <= '1';
 						Mensagem_clr <= '0';
 						Dinheiro_total_ld <= '0';
-						Dinheiro_total_clr <= '0';
+						Dinheiro_total_clr <= '1';
 						Produto_liberado <= '0';
 						Troco_clr <= '0';
 						Troco_ld <= '0';
@@ -72,7 +72,7 @@ begin
 						elsif Confirmar = '1' then
 							next_state <= espera;
 						else
-							next_state <= invalido;
+							next_state <= cancela;
 						end if; 
 										
 				when espera =>
@@ -81,34 +81,38 @@ begin
 						Mensagem_do_sistema <= "101";
 						Mensagem_ld <= '1';
 						Mensagem_clr <= '0';
-						Dinheiro_total_ld <= '1';
+						Dinheiro_total_ld <= '0';
 						Dinheiro_total_clr <= '0';
 						Produto_liberado <= '0';
 						Troco_clr <= '0';
 						Troco_ld <= '0';
-						if Dinheiro_eq_0  = '0' then
-							next_state <= calcula;
-						elsif DgtP = '1' AND Dinheiro_eq_0  = '1' then
-							next_state <= troco;
-						elsif DeqP = '1' AND Dinheiro_eq_0 = '1' then
-							next_state <= entrega;	
-						elsif DltP = '1' AND Dinheiro_eq_0 = '1' then
-							next_state <= espera;
-						else 
-							next_state <= invalido;
-						end if;
+						next_state <= calcula;
 						
 				when calcula =>
 						Produto_selecionado_ld <= '0';
 						Produto_selecionado_clr <= '0';
 						Mensagem_ld <= '0';
 						Mensagem_clr <= '0';
-						Dinheiro_total_ld <= '1';
 						Dinheiro_total_clr <= '0';
-						Produto_liberado <= '0';
 						Troco_clr <= '0';
-						Troco_ld <= '0';
-						next_state <= espera;
+						Produto_liberado <= '0';
+						if DgtP = '1' then
+							Dinheiro_total_ld <= '0';
+							next_state <= troco;
+							Troco_ld <= '1';
+						elsif DeqP = '1' then
+							Dinheiro_total_ld <= '0';
+							next_state <= entrega;	
+							Troco_ld <= '0';
+						elsif DltP = '1' then
+							Dinheiro_total_ld <= '1';
+							next_state <= calcula;
+							Troco_ld <= '0';
+						else 
+							Dinheiro_total_ld <= '0';
+							next_state <= cancela;
+							Troco_ld <= '0';
+						end if;
 							
 				when troco=>
 						Produto_selecionado_ld <= '0';
@@ -117,12 +121,12 @@ begin
 						Mensagem_ld <= '1';
 						Mensagem_clr <= '0';
 						Dinheiro_total_ld <= '0';
-						Dinheiro_total_clr <= '0';
+						Dinheiro_total_clr <= '1';
 						Produto_liberado <= '0';
 						Troco_clr <= '0';
 						Troco_ld <= '1';
 						next_state <= entrega;
-							
+						
 				when entrega =>
 						Produto_selecionado_ld <= '0';
 						Produto_selecionado_clr <= '0';
@@ -132,34 +136,22 @@ begin
 						Dinheiro_total_ld <= '0';
 						Dinheiro_total_clr <= '1';	
 						Produto_liberado <= '1';
-						Troco_clr <= '0';
+						Troco_clr <= '1';
 						Troco_ld <= '0';
 						next_state <= inicio;
 
 				when cancela =>
-						next_state <= inicio;
 						Produto_selecionado_ld <= '0';
 						Produto_selecionado_clr <= '1';
+						Dinheiro_total_ld <= '0';
+						Dinheiro_total_clr <= '1';
 						Mensagem_do_sistema <= "100";
 						Mensagem_ld <= '1';
 						Mensagem_clr <= '0';
-						Dinheiro_total_ld <= '0';
-						Dinheiro_total_clr <= '1';
-						Produto_liberado <= '0';
 						Troco_clr <= '1';
 						Troco_ld <= '0';
-						
-				when invalido =>
+						Produto_liberado <= '0';
 						next_state <= inicio;
-						Produto_selecionado_ld <= '0';
-						Produto_selecionado_clr <= '1';
-						Dinheiro_total_ld <= '0';
-						Dinheiro_total_clr <= '1';
-						Mensagem_ld <= '0';
-						Mensagem_clr <= '1';
-						Troco_clr <= '1';
-						Troco_ld <= '0';
-						Produto_liberado <= '0';
 												
 				end case;
 	end process;
