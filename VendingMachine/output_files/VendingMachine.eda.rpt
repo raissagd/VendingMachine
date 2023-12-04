@@ -1,5 +1,5 @@
 EDA Netlist Writer report for VendingMachine
-Sun Dec 03 22:21:41 2023
+Mon Dec 04 09:23:32 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Dec 03 22:21:41 2023 ;
+; EDA Netlist Writer Status ; Successful - Mon Dec 04 09:23:32 2023 ;
 ; Revision Name             ; VendingMachine                        ;
 ; Top-level Entity Name     ; VendingMachine                        ;
 ; Family                    ; Cyclone II                            ;
@@ -84,13 +84,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Dec 03 22:21:40 2023
+    Info: Processing started: Mon Dec 04 09:23:31 2023
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off VendingMachine -c VendingMachine
 Info (204026): Generated files "VendingMachine.vho", "VendingMachine_fast.vho", "VendingMachine_vhd.sdo" and "VendingMachine_vhd_fast.sdo" in directory "C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4519 megabytes
-    Info: Processing ended: Sun Dec 03 22:21:41 2023
+    Info: Processing ended: Mon Dec 04 09:23:32 2023
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 
