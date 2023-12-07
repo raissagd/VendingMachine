@@ -2,68 +2,100 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'CLOCK'
-Slack : -2.922
-TNS   : -88.933
+Type  : Slow 1200mV 85C Model Setup 'CLOCK'
+Slack : -1.870
+TNS   : -29.811
 
-Type  : Slow Model Setup 'Controladora:Ctrl|state.calcula'
-Slack : -0.573
-TNS   : -1.271
+Type  : Slow 1200mV 85C Model Setup 'Controladora:Ctrl|state.calculaDinheiro'
+Slack : -0.080
+TNS   : -0.080
 
-Type  : Slow Model Hold 'CLOCK'
-Slack : -1.668
-TNS   : -16.425
+Type  : Slow 1200mV 85C Model Hold 'Controladora:Ctrl|state.calculaDinheiro'
+Slack : -0.513
+TNS   : -1.122
 
-Type  : Slow Model Hold 'Controladora:Ctrl|state.calcula'
-Slack : 0.042
+Type  : Slow 1200mV 85C Model Hold 'CLOCK'
+Slack : -0.075
+TNS   : -0.095
+
+Type  : Slow 1200mV 85C Model Recovery 'CLOCK'
+Slack : -0.985
+TNS   : -15.494
+
+Type  : Slow 1200mV 85C Model Removal 'CLOCK'
+Slack : 0.199
 TNS   : 0.000
 
-Type  : Slow Model Recovery 'CLOCK'
-Slack : -0.942
-TNS   : -21.089
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK'
+Slack : -3.000
+TNS   : -34.000
 
-Type  : Slow Model Removal 'CLOCK'
-Slack : -0.852
-TNS   : -12.840
-
-Type  : Slow Model Minimum Pulse Width 'CLOCK'
-Slack : -1.380
-TNS   : -39.380
-
-Type  : Slow Model Minimum Pulse Width 'Controladora:Ctrl|state.calcula'
-Slack : 0.500
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Controladora:Ctrl|state.calculaDinheiro'
+Slack : 0.391
 TNS   : 0.000
 
-Type  : Fast Model Setup 'CLOCK'
-Slack : -0.809
-TNS   : -21.277
+Type  : Slow 1200mV 0C Model Setup 'CLOCK'
+Slack : -1.566
+TNS   : -23.780
 
-Type  : Fast Model Setup 'Controladora:Ctrl|state.calcula'
-Slack : 0.151
+Type  : Slow 1200mV 0C Model Setup 'Controladora:Ctrl|state.calculaDinheiro'
+Slack : 0.018
 TNS   : 0.000
 
-Type  : Fast Model Hold 'CLOCK'
-Slack : -1.152
-TNS   : -17.475
+Type  : Slow 1200mV 0C Model Hold 'Controladora:Ctrl|state.calculaDinheiro'
+Slack : -0.432
+TNS   : -0.947
 
-Type  : Fast Model Hold 'Controladora:Ctrl|state.calcula'
-Slack : 0.204
+Type  : Slow 1200mV 0C Model Hold 'CLOCK'
+Slack : -0.029
+TNS   : -0.029
+
+Type  : Slow 1200mV 0C Model Recovery 'CLOCK'
+Slack : -0.790
+TNS   : -11.860
+
+Type  : Slow 1200mV 0C Model Removal 'CLOCK'
+Slack : 0.186
 TNS   : 0.000
 
-Type  : Fast Model Recovery 'CLOCK'
-Slack : 0.002
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK'
+Slack : -3.000
+TNS   : -34.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Controladora:Ctrl|state.calculaDinheiro'
+Slack : 0.391
 TNS   : 0.000
 
-Type  : Fast Model Removal 'CLOCK'
-Slack : -0.689
-TNS   : -10.660
+Type  : Fast 1200mV 0C Model Setup 'CLOCK'
+Slack : -0.605
+TNS   : -5.163
 
-Type  : Fast Model Minimum Pulse Width 'CLOCK'
-Slack : -1.380
-TNS   : -39.380
+Type  : Fast 1200mV 0C Model Setup 'Controladora:Ctrl|state.calculaDinheiro'
+Slack : 0.442
+TNS   : 0.000
 
-Type  : Fast Model Minimum Pulse Width 'Controladora:Ctrl|state.calcula'
-Slack : 0.500
+Type  : Fast 1200mV 0C Model Hold 'Controladora:Ctrl|state.calculaDinheiro'
+Slack : -0.408
+TNS   : -0.984
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK'
+Slack : -0.133
+TNS   : -0.332
+
+Type  : Fast 1200mV 0C Model Recovery 'CLOCK'
+Slack : -0.124
+TNS   : -1.341
+
+Type  : Fast 1200mV 0C Model Removal 'CLOCK'
+Slack : 0.024
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK'
+Slack : -3.000
+TNS   : -34.927
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Controladora:Ctrl|state.calculaDinheiro'
+Slack : 0.419
 TNS   : 0.000
 
 ------------------------------------------------------------

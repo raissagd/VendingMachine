@@ -21,7 +21,6 @@ entity datapath is
 		  DltP: out std_logic;
 		  DeqP: out std_logic;
 		  Preco_eq_0: out std_logic;
-		  Dinheiro_eq_0: out std_logic;
 		  Troco : out std_logic_vector(7 downto 0) := "00000000";
         Display : out std_logic_vector(6 downto 0)
     );
@@ -98,8 +97,8 @@ architecture arch of datapath is
 	signal fio_mensagem_display: std_logic_vector(2 downto 0);
 	signal fio_preco_produto: std_logic_vector(7 downto 0);
 	signal fio_subtrator_reg_troco: std_logic_vector(7 downto 0);
-	signal fio_regSomador_regDinheiro: std_logic_vector(7 downto 0);
-begin
+
+	begin
    -- Instância dos componentes
 	Reg_Produto: registrador
         generic map(
@@ -123,7 +122,7 @@ begin
 			  clock => CLOCK,
 			  load  => Dinheiro_total_ld,
 			  enable => '1',
-			  D      => fio_regSomador_regDinheiro,
+			  D      => fio_somador_dinheiro_atual,
 			  Q      => fio_valor_dinheiro_atual
         ); 
 		  
@@ -152,19 +151,6 @@ begin
 			  D      => fio_subtrator_reg_troco,
 			  Q      => Troco
         );
-		  
-	Reg_DinheiroAtual : registrador
-		generic map(
-			W => 8
-		)
-		port map(
-			reset => Dinheiro_total_clr,
-			clock => CLOCK,
-			load  => Dinheiro_total_ld,
-			enable => '1',
-			D      => fio_somador_dinheiro_atual,
-			Q      => fio_regSomador_regDinheiro
-		);
 
  Comparador_prod_valido: comparador
         generic map (
@@ -188,16 +174,6 @@ begin
 			igual	=> DeqP
 		);
 		
-    Comparador_entrada_dinheiro: comparador
-        generic map (
-            W => 8
-        )
-        port map (
-            a     => Dinheiro,
-            b     => (others => '0'),
-            igual => Dinheiro_eq_0
-        );
-	
 	Rom_preco_produto: ROM
 		port map(
 			endereco => fio_produto_selecionado,

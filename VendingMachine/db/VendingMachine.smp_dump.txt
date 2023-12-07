@@ -1,11 +1,12 @@
 
 State Machine - |VendingMachine|Controladora:Ctrl|state
-Name state.entrega state.troco state.calcula state.espera state.cancela state.confirma state.validaProduto state.inicio 
-state.inicio 0 0 0 0 0 0 0 0 
-state.validaProduto 0 0 0 0 0 0 1 1 
-state.confirma 0 0 0 0 0 1 0 1 
-state.cancela 0 0 0 0 1 0 0 1 
-state.espera 0 0 0 1 0 0 0 1 
-state.calcula 0 0 1 0 0 0 0 1 
-state.troco 0 1 0 0 0 0 0 1 
-state.entrega 1 0 0 0 0 0 0 1 
+Name state.entregaProduto state.entregaTroco state.calculaTroco state.calculaDinheiro state.leiaDinheiro state.cancela state.confirma state.validaProduto state.inicio 
+state.inicio 0 0 0 0 0 0 0 0 0 
+state.validaProduto 0 0 0 0 0 0 0 1 1 
+state.confirma 0 0 0 0 0 0 1 0 1 
+state.cancela 0 0 0 0 0 1 0 0 1 
+state.leiaDinheiro 0 0 0 0 1 0 0 0 1 
+state.calculaDinheiro 0 0 0 1 0 0 0 0 1 
+state.calculaTroco 0 0 1 0 0 0 0 0 1 
+state.entregaTroco 0 1 0 0 0 0 0 0 1 
+state.entregaProduto 1 0 0 0 0 0 0 0 1 

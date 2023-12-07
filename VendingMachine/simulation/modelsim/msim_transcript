@@ -1,70 +1,16 @@
-# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# Reading D:/Quartus/modelsim_ase/tcl/vsim/pref.tcl 
 # do VendingMachine_run_msim_rtl_vhdl.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Copying D:\Quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied D:\Quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/BCD_7seg/bcd_7seg.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Bcd_7seg
-# -- Compiling architecture with_select_bcd7seg of Bcd_7seg
-# vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/CaminhoDeDados/datapath.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity datapath
-# -- Compiling architecture arch of datapath
-# vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/Comparador/comparador.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity comparador
-# -- Compiling architecture estrutural of comparador
-# vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/Controladora/Controladora.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Controladora
-# -- Compiling architecture arch of Controladora
-# vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/Registrador/registrador.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity registrador
-# -- Compiling architecture RTL of registrador
-# vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/ROM_Preco/rom.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ROM
-# -- Compiling architecture rtl of ROM
-# vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/Somador/somador.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity somador
-# -- Compiling architecture rtl of somador
-# vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/Subtrator/subtrator.vhd}
+# vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Subtrator/subtrator.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -72,7 +18,61 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity subtrator
 # -- Compiling architecture rtl of subtrator
-# vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/VendingMachine.vhd}
+# vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Somador/somador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity somador
+# -- Compiling architecture rtl of somador
+# vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/ROM_Preco/rom.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ROM
+# -- Compiling architecture rtl of ROM
+# vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Registrador/registrador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity registrador
+# -- Compiling architecture RTL of registrador
+# vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Controladora/Controladora.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Controladora
+# -- Compiling architecture arch of Controladora
+# vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Comparador/comparador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity comparador
+# -- Compiling architecture estrutural of comparador
+# vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/CaminhoDeDados/datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity datapath
+# -- Compiling architecture arch of datapath
+# vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/BCD_7seg/bcd_7seg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Bcd_7seg
+# -- Compiling architecture with_select_bcd7seg of Bcd_7seg
+# vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/VendingMachine/VendingMachine.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -82,7 +82,7 @@
 # -- Compiling entity VendingMachine
 # -- Compiling architecture RTL of VendingMachine
 # 
-# vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/tb_VendingMachine.vhd}
+# vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/VendingMachine/tb_VendingMachine.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -92,8 +92,8 @@
 # -- Compiling entity tb_VendingMachine
 # -- Compiling architecture testbench of tb_VendingMachine
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_VendingMachine
-# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_VendingMachine 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  tb_VendingMachine
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_VendingMachine 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -116,7 +116,29 @@
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run 220 ns
+# run 240 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_vendingmachine/VendingMachine_Instance/DPath/Rom_preco_produto
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_vendingmachine/VendingMachine_Instance/DPath/Comparador_preco
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_vendingmachine/VendingMachine_Instance/DPath/Comparador_preco
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_vendingmachine/VendingMachine_Instance/DPath/Comparador_preco
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_vendingmachine/VendingMachine_Instance/DPath/Comparador_prod_valido
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_vendingmachine/VendingMachine_Instance/DPath/Comparador_prod_valido
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_vendingmachine/VendingMachine_Instance/DPath/Comparador_prod_valido
+add wave -position end  sim:/tb_vendingmachine/VendingMachine_Instance/DPath/fio_valor_dinheiro_atual
+add wave -position end  sim:/tb_vendingmachine/VendingMachine_Instance/DPath/fio_preco_produto
+add wave -position end  sim:/tb_vendingmachine/VendingMachine_Instance/DPath/fio_mensagem_display
+add wave -position end  sim:/tb_vendingmachine/VendingMachine_Instance/Ctrl/state
+add wave -position end  sim:/tb_vendingmachine/VendingMachine_Instance/Ctrl/next_state
+add wave -position end  sim:/tb_vendingmachine/VendingMachine_Instance/Ctrl/Produto_liberado
+restart -f
+run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /tb_vendingmachine/VendingMachine_Instance/DPath/Rom_preco_produto
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE

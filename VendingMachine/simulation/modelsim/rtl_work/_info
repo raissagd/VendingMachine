@@ -2,22 +2,22 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\Acer\Downloads\Vendingmachine\VendingMachine\simulation\modelsim
+Z0 dC:\Users\dudah\OneDrive\햞ea de Trabalho\UFMG\Lab Sistemas Digitais\VendingMachine\VendingMachine\simulation\modelsim
 Ebcd_7seg
-Z1 w1701616040
+Z1 w1701616039
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z4 dC:\Users\Acer\Downloads\Vendingmachine\VendingMachine\simulation\modelsim
-Z5 8C:/Users/Acer/Downloads/Vendingmachine/BCD_7seg/bcd_7seg.vhd
-Z6 FC:/Users/Acer/Downloads/Vendingmachine/BCD_7seg/bcd_7seg.vhd
+Z4 dC:\Users\dudah\OneDrive\햞ea de Trabalho\UFMG\Lab Sistemas Digitais\VendingMachine\VendingMachine\simulation\modelsim
+Z5 8C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/BCD_7seg/bcd_7seg.vhd
+Z6 FC:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/BCD_7seg/bcd_7seg.vhd
 l0
 L4
 V2PPViA]ZHYdg43zZE7Tnz3
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1701692623.013000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/BCD_7seg/bcd_7seg.vhd|
-Z10 !s107 C:/Users/Acer/Downloads/Vendingmachine/BCD_7seg/bcd_7seg.vhd|
+Z8 !s108 1701965134.194000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/BCD_7seg/bcd_7seg.vhd|
+Z10 !s107 C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/BCD_7seg/bcd_7seg.vhd|
 Z11 o-93 -work work -O0
 Z12 tExplicit 1
 !s100 ELj_;e69_[19WDbZ<nZNW0
@@ -44,16 +44,16 @@ Z13 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 R2
 R3
 R4
-Z14 8C:/Users/Acer/Downloads/Vendingmachine/Comparador/comparador.vhd
-Z15 FC:/Users/Acer/Downloads/Vendingmachine/Comparador/comparador.vhd
+Z14 8C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Comparador/comparador.vhd
+Z15 FC:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Comparador/comparador.vhd
 l0
 L5
 VgTnPnfSj7GzJVmGR;91dH3
 R7
 31
-Z16 !s108 1701692623.132000
-Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/Comparador/comparador.vhd|
-Z18 !s107 C:/Users/Acer/Downloads/Vendingmachine/Comparador/comparador.vhd|
+Z16 !s108 1701965134.021000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Comparador/comparador.vhd|
+Z18 !s107 C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Comparador/comparador.vhd|
 R11
 R12
 !s100 [Q`ej9fh@WKJl>`U`mWJm0
@@ -76,33 +76,33 @@ R12
 !s100 KS^Li1>3UkPcb>JRi4zCU2
 !i10b 1
 Econtroladora
-Z19 w1701644296
+Z19 w1701965017
 R13
 R2
 R3
 R4
-Z20 8C:/Users/Acer/Downloads/Vendingmachine/Controladora/Controladora.vhd
-Z21 FC:/Users/Acer/Downloads/Vendingmachine/Controladora/Controladora.vhd
+Z20 8C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Controladora/Controladora.vhd
+Z21 FC:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Controladora/Controladora.vhd
 l0
 L5
-V[PCM6TMR]P8GE47kd;13j2
+VI6Xj;bRl8L20K5ZN:RZB;0
 R7
 31
-Z22 !s108 1701692623.219000
-Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/Controladora/Controladora.vhd|
-Z24 !s107 C:/Users/Acer/Downloads/Vendingmachine/Controladora/Controladora.vhd|
+Z22 !s108 1701965133.935000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Controladora/Controladora.vhd|
+Z24 !s107 C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Controladora/Controladora.vhd|
 R11
 R12
-!s100 jOaojaRjZF61[i<R1e>@M0
+!s100 ;Z6YN0K^ZX:T:lf9]Uo]h2
 !i10b 1
 Aarch
 R13
 R2
 R3
-DEx4 work 12 controladora 0 22 [PCM6TMR]P8GE47kd;13j2
+DEx4 work 12 controladora 0 22 I6Xj;bRl8L20K5ZN:RZB;0
 l19
 L15
-Vhgz][XaP7MofEl@1D91kz1
+VcjLofBIM<983??z]<`n<52
 R7
 31
 R22
@@ -110,36 +110,36 @@ R23
 R24
 R11
 R12
-!s100 P1<<n2aF`[3iWBRlO5_lb1
+!s100 EHYA@H<Ae7W2>TDkDaUmg0
 !i10b 1
 Edatapath
-Z25 w1701642440
+Z25 w1701960908
 R13
 R2
 R3
 R4
-Z26 8C:/Users/Acer/Downloads/Vendingmachine/CaminhoDeDados/datapath.vhd
-Z27 FC:/Users/Acer/Downloads/Vendingmachine/CaminhoDeDados/datapath.vhd
+Z26 8C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/CaminhoDeDados/datapath.vhd
+Z27 FC:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/CaminhoDeDados/datapath.vhd
 l0
 L5
-VX3DnV[_H_Ib;[TQ`B7nW>3
+VloY`z0PkFZSBzTaF4:JJK0
 R7
 31
-Z28 !s108 1701692623.072000
-Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/CaminhoDeDados/datapath.vhd|
-Z30 !s107 C:/Users/Acer/Downloads/Vendingmachine/CaminhoDeDados/datapath.vhd|
+Z28 !s108 1701965134.104000
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/CaminhoDeDados/datapath.vhd|
+Z30 !s107 C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/CaminhoDeDados/datapath.vhd|
 R11
 R12
-!s100 OVC3]cOJY3QCc]>nSeS7N3
+!s100 :K90jd3@Vj9lXW[3dZ8Ua3
 !i10b 1
 Aarch
 R13
 R2
 R3
-DEx4 work 8 datapath 0 22 X3DnV[_H_Ib;[TQ`B7nW>3
-l102
-L30
-V<Xh:fLb[=<JQkX7^RBV<90
+DEx4 work 8 datapath 0 22 loY`z0PkFZSBzTaF4:JJK0
+l101
+L29
+VeF51Wdk;lH^D:jJ=j7cT12
 R7
 31
 R28
@@ -147,23 +147,23 @@ R29
 R30
 R11
 R12
-!s100 RmRRMzm?T2c>V_5?dzeNB2
+!s100 3hoFU8aS8I8aekC7FE[4a1
 !i10b 1
 Eregistrador
 R1
 R2
 R3
 R4
-Z31 8C:/Users/Acer/Downloads/Vendingmachine/Registrador/registrador.vhd
-Z32 FC:/Users/Acer/Downloads/Vendingmachine/Registrador/registrador.vhd
+Z31 8C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Registrador/registrador.vhd
+Z32 FC:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Registrador/registrador.vhd
 l0
 L4
 VUdTBiO3:>M2PfhP`EL@`93
 R7
 31
-Z33 !s108 1701692623.281000
-Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/Registrador/registrador.vhd|
-Z35 !s107 C:/Users/Acer/Downloads/Vendingmachine/Registrador/registrador.vhd|
+Z33 !s108 1701965133.852000
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Registrador/registrador.vhd|
+Z35 !s107 C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Registrador/registrador.vhd|
 R11
 R12
 !s100 6z8[b2H<dja4`lPRJAmHE0
@@ -185,21 +185,21 @@ R12
 !s100 kV9bihZZ1GMl9RM]nIBGg0
 !i10b 1
 Erom
-Z36 w1701627834
+Z36 w1701627832
 R13
 R2
 R3
 R4
-Z37 8C:/Users/Acer/Downloads/Vendingmachine/ROM_Preco/rom.vhd
-Z38 FC:/Users/Acer/Downloads/Vendingmachine/ROM_Preco/rom.vhd
+Z37 8C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/ROM_Preco/rom.vhd
+Z38 FC:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/ROM_Preco/rom.vhd
 l0
 L5
 Vaml`@65l^e7QWZKTBj`Y^0
 R7
 31
-Z39 !s108 1701692623.338000
-Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/ROM_Preco/rom.vhd|
-Z41 !s107 C:/Users/Acer/Downloads/Vendingmachine/ROM_Preco/rom.vhd|
+Z39 !s108 1701965133.769000
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/ROM_Preco/rom.vhd|
+Z41 !s107 C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/ROM_Preco/rom.vhd|
 R11
 R12
 !s100 Bz>ncz3nKZDE2b]EiM9593
@@ -227,16 +227,16 @@ R13
 R2
 R3
 R4
-Z42 8C:/Users/Acer/Downloads/Vendingmachine/Somador/somador.vhd
-Z43 FC:/Users/Acer/Downloads/Vendingmachine/Somador/somador.vhd
+Z42 8C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Somador/somador.vhd
+Z43 FC:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Somador/somador.vhd
 l0
 L5
 VeJZJUA@d[f7n0722:OQj23
 R7
 31
-Z44 !s108 1701692623.407000
-Z45 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/Somador/somador.vhd|
-Z46 !s107 C:/Users/Acer/Downloads/Vendingmachine/Somador/somador.vhd|
+Z44 !s108 1701965133.680000
+Z45 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Somador/somador.vhd|
+Z46 !s107 C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Somador/somador.vhd|
 R11
 R12
 !s100 baS4?O@;?JIXPAk@P8cLZ3
@@ -264,16 +264,16 @@ R13
 R2
 R3
 R4
-Z47 8C:/Users/Acer/Downloads/Vendingmachine/Subtrator/subtrator.vhd
-Z48 FC:/Users/Acer/Downloads/Vendingmachine/Subtrator/subtrator.vhd
+Z47 8C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Subtrator/subtrator.vhd
+Z48 FC:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Subtrator/subtrator.vhd
 l0
 L5
 VPnMFcR:2Aia<b5mMPESlz1
 R7
 31
-Z49 !s108 1701692623.483000
-Z50 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/Subtrator/subtrator.vhd|
-Z51 !s107 C:/Users/Acer/Downloads/Vendingmachine/Subtrator/subtrator.vhd|
+Z49 !s108 1701965133.527000
+Z50 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Subtrator/subtrator.vhd|
+Z51 !s107 C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Subtrator/subtrator.vhd|
 R11
 R12
 !s100 dW1C7[Kz5oh`I]P?P9g8^2
@@ -296,14 +296,14 @@ R12
 !s100 Uz52M3oRY7;USZ6=dA0D60
 !i10b 1
 Etb_vendingmachine
-Z52 w1701692594
+Z52 w1701959715
 Z53 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
 Z54 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 R2
 R3
 R4
-Z55 8C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/tb_VendingMachine.vhd
-Z56 FC:/Users/Acer/Downloads/Vendingmachine/VendingMachine/tb_VendingMachine.vhd
+Z55 8C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/VendingMachine/tb_VendingMachine.vhd
+Z56 FC:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/VendingMachine/tb_VendingMachine.vhd
 l0
 L6
 V_;TSzMd5H<aC^hTmLdA=h1
@@ -311,9 +311,9 @@ V_;TSzMd5H<aC^hTmLdA=h1
 R7
 31
 !i10b 1
-Z57 !s108 1701692623.604000
-Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/tb_VendingMachine.vhd|
-Z59 !s107 C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/tb_VendingMachine.vhd|
+Z57 !s108 1701965134.361000
+Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/VendingMachine/tb_VendingMachine.vhd|
+Z59 !s107 C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/VendingMachine/tb_VendingMachine.vhd|
 R11
 R12
 Atestbench
@@ -322,10 +322,10 @@ R54
 R2
 R3
 DEx4 work 17 tb_vendingmachine 0 22 _;TSzMd5H<aC^hTmLdA=h1
-l27
+l25
 L9
-Vo]jTX2WcjiWhHTR8EF;Zc0
-!s100 KEDec4zN[R0H:zaT0SKeJ1
+V_Czd:n23n07@^z`cz2^k:1
+!s100 _4BN1_G1M6oF5ehDd2NLL3
 R7
 31
 !i10b 1
@@ -335,22 +335,22 @@ R59
 R11
 R12
 Evendingmachine
-Z60 w1701652734
+Z60 w1701960909
 R54
 R53
 R2
 R3
 R4
-Z61 8C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/VendingMachine.vhd
-Z62 FC:/Users/Acer/Downloads/Vendingmachine/VendingMachine/VendingMachine.vhd
+Z61 8C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/VendingMachine/VendingMachine.vhd
+Z62 FC:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/VendingMachine/VendingMachine.vhd
 l0
 L5
 VLlY_doXSQ0CNkgHCNNSzh1
 R7
 31
-Z63 !s108 1701692623.542000
-Z64 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/VendingMachine.vhd|
-Z65 !s107 C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/VendingMachine.vhd|
+Z63 !s108 1701965134.270000
+Z64 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/VendingMachine/VendingMachine.vhd|
+Z65 !s107 C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/VendingMachine/VendingMachine.vhd|
 R11
 R12
 !s100 N3gA>7CO]f@Un1LkN7Zkl1
@@ -361,9 +361,9 @@ R53
 R2
 R3
 DEx4 work 14 vendingmachine 0 22 LlY_doXSQ0CNkgHCNNSzh1
-l62
+l61
 L17
-VUd:nE1I<AmZ6R>Wed2M`12
+V]GJnQ1gERhHKAX:nFSliX2
 R7
 31
 R63
@@ -371,5 +371,5 @@ R64
 R65
 R11
 R12
-!s100 BBnDDI[;5A1em7aF[6bY02
+!s100 cRm:bPT68;K<9ePUFDCT43
 !i10b 1

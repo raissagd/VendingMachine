@@ -16,7 +16,7 @@ end VendingMachine;
 
 architecture RTL OF VendingMachine is
 	signal fio_DltP, fio_DeqP, fio_DgtP: std_logic;
-	signal fio_Dinheiro_eq_0, fio_Preco_eq_0: std_logic;
+	signal fio_Preco_eq_0: std_logic;
 	signal fio_Produto_selecionado_clr, fio_Produto_selecionado_ld: std_logic;
 	signal fio_Dinheiro_total_ld, fio_Dinheiro_total_clr: std_logic;
 	signal fio_Troco_ld, fio_Troco_clr: std_logic;
@@ -27,7 +27,7 @@ architecture RTL OF VendingMachine is
 	component Controladora 
     port (
 		 RESET, CLOCK, Confirmar: in std_logic;
-		 DltP, DeqP, DgtP, Preco_eq_0, Dinheiro_eq_0: in std_logic;
+		 DltP, DeqP, DgtP, Preco_eq_0: in std_logic;
 		 Produto_liberado: out std_logic;
 		 Produto_selecionado_clr, Produto_selecionado_ld, Mensagem_ld, Mensagem_clr, Dinheiro_total_ld, Dinheiro_total_clr, Troco_clr, Troco_ld: out std_logic;
 		 Mensagem_do_sistema: out std_logic_vector(2 downto 0)
@@ -53,7 +53,6 @@ architecture RTL OF VendingMachine is
 			DltP: out std_logic;
 			DeqP: out std_logic;
 			Preco_eq_0: out std_logic;
-			Dinheiro_eq_0: out std_logic;
 			Troco : out std_logic_vector(7 downto 0);
 			Display : out std_logic_vector(6 downto 0)
 		);
@@ -78,7 +77,6 @@ architecture RTL OF VendingMachine is
 				DltP                         => fio_DltP,
 				DeqP                         => fio_DeqP,
 				Preco_eq_0                   => fio_Preco_eq_0,
-				Dinheiro_eq_0                => fio_Dinheiro_eq_0,
 			   Troco_clr                    => fio_Troco_clr,
 		      Troco_ld                     => fio_Troco_ld,
 		 		Troco                        => Troco,
@@ -95,7 +93,6 @@ architecture RTL OF VendingMachine is
 				DeqP                         => fio_DeqP,
 				DgtP                         => fio_DgtP,
 				Preco_eq_0                   => fio_Preco_eq_0,
-				Dinheiro_eq_0                => fio_Dinheiro_eq_0,
 				Produto_selecionado_clr      => fio_Produto_selecionado_clr,
 				Produto_selecionado_ld       => fio_Produto_selecionado_ld,
 				Dinheiro_total_ld            => fio_Dinheiro_total_ld,

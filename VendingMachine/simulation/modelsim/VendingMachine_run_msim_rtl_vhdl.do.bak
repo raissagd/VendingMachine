@@ -5,21 +5,21 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/BCD_7seg/bcd_7seg.vhd}
-vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/CaminhoDeDados/datapath.vhd}
-vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/Comparador/comparador.vhd}
-vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/Controladora/Controladora.vhd}
-vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/Registrador/registrador.vhd}
-vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/ROM_Preco/rom.vhd}
-vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/Somador/somador.vhd}
-vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/Subtrator/subtrator.vhd}
-vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/VendingMachine.vhd}
+vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Subtrator/subtrator.vhd}
+vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Somador/somador.vhd}
+vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/ROM_Preco/rom.vhd}
+vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Registrador/registrador.vhd}
+vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Controladora/Controladora.vhd}
+vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/Comparador/comparador.vhd}
+vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/CaminhoDeDados/datapath.vhd}
+vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/BCD_7seg/bcd_7seg.vhd}
+vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/VendingMachine/VendingMachine.vhd}
 
-vcom -93 -work work {C:/Users/Acer/Downloads/Vendingmachine/VendingMachine/tb_VendingMachine.vhd}
+vcom -93 -work work {C:/Users/dudah/OneDrive/햞ea de Trabalho/UFMG/Lab Sistemas Digitais/VendingMachine/VendingMachine/tb_VendingMachine.vhd}
 
-vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_VendingMachine
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  tb_VendingMachine
 
 add wave *
 view structure
 view signals
-run 220 ns
+run 140 ns
